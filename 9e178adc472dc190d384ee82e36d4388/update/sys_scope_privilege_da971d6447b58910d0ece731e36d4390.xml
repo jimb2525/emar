@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>trevor.roberts</sys_created_by>
+        <sys_created_on>2022-02-17 15:12:37</sys_created_on>
+        <sys_id>da971d6447b58910d0ece731e36d4390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_elara_data_0_patient</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_scope_privilege_da971d6447b58910d0ece731e36d4390</sys_update_name>
+        <sys_updated_by>trevor.roberts</sys_updated_by>
+        <sys_updated_on>2022-02-17 15:12:37</sys_updated_on>
+        <target_name>x_snc_elara_data_0_patient</target_name>
+        <target_scope display_value="Elara Data Model">1f537dc447258190d384ee82e36d43d0</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

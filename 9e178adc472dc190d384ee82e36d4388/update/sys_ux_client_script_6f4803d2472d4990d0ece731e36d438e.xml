@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>881d20a10fe21010ad4437a98b767e2a,a68702f6b7621010ad44ea56ee11a90e,e3e0d376b7e21010ad44ea56ee11a924,d67f1bbeb7e21010ad44ea56ee11a9d3,17c0853d0fa61010ad4437a98b767e13</includes>
+        <macroponent display_value="Visual Board Demo Page">234803d2472d4990d0ece731e36d4383</macroponent>
+        <name>Visual Board Optimistic Updates Script</name>
+        <required_translations/>
+        <script><![CDATA[function script({api, event,imports, helpers}) { 
+    const {
+        snHttp,
+        modal,
+        screen
+    } = helpers;
+    const {
+        emit: dispatch,
+        setState,
+        state,
+        context,
+        data,
+        elements
+    } = api;
+
+    const {
+        'sn_vtb.constants': constantsInclude,
+        'sn_vtb.cardHandlers': cardHandlersInclude,
+        'sn_vtb.laneHandlers': laneHandlersInclude,
+        'sn_vtb.stateUpdates': stateUpdatesInclude,
+        'sn_vtb.utils': utilsInclude
+    } = imports;
+    const {
+        ACTIONS: {
+            CARD_MOVED,
+            LANE_MOVED,
+            SWIMLANE_MOVED,
+            VTB_DATA_DRIVEN_CARD_ADDED,
+            VTB_LANE_HIDE_SELECTED,
+            VTB_LANE_HEADER_UPDATED
+        }
+    } = constantsInclude();
+    const {
+        execGraphQLEndPoint
+    } = utilsInclude();
+    const {
+        moveCardOptimisticHandler,
+        addDataDrivenOptimisticCardHandler
+    } = cardHandlersInclude();
+    const {
+        moveLaneOptimisticHandler,
+        moveSwimlaneOptimisticHandler,
+        hideLaneOptimisticHandler,
+        laneHeaderOptimisticUpdateHandler
+    } = laneHandlersInclude();
+    const {
+        setBoardState,
+        setBoardDirtyState
+    } = stateUpdatesInclude();
+
+    const {
+        name,
+        payload
+    } = event;
+    const {
+        boardState,
+        boardDirtyState = {}
+    } = state;
+
+    let output = {};
+    switch (name) {
+        case CARD_MOVED:
+            output = moveCardOptimisticHandler(boardState, boardDirtyState, payload);
+            break;
+
+        case LANE_MOVED:
+            output = moveLaneOptimisticHandler(boardState, boardDirtyState, payload);
+            break;
+
+        case SWIMLANE_MOVED:
+            output = moveSwimlaneOptimisticHandler(boardState, boardDirtyState, payload);
+            break;
+
+        case VTB_DATA_DRIVEN_CARD_ADDED:
+            output = addDataDrivenOptimisticCardHandler(boardState, boardDirtyState, payload);
+            break;
+
+        case VTB_LANE_HIDE_SELECTED:
+            output = hideLaneOptimisticHandler(boardState, payload);
+            break;
+
+        case VTB_LANE_HEADER_UPDATED:
+            output = laneHeaderOptimisticUpdateHandler(boardState, boardDirtyState, payload);
+            break;
+    }
+
+    if (output.newBoardState)
+        setBoardState(api, output.newBoardState);
+
+    if (output.newBoardDirtyState)
+        setBoardDirtyState(api, output.newBoardDirtyState);
+
+    if (output.dbPayload)
+        execGraphQLEndPoint(output.dbPayload.operationName, output.dbPayload.operationPayload, dispatch);
+ }]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>dan.munk</sys_created_by>
+        <sys_created_on>2022-02-10 23:38:44</sys_created_on>
+        <sys_id>6f4803d2472d4990d0ece731e36d438e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visual Board Optimistic Updates Script</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_client_script_6f4803d2472d4990d0ece731e36d438e</sys_update_name>
+        <sys_updated_by>dan.munk</sys_updated_by>
+        <sys_updated_on>2022-02-10 23:38:44</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

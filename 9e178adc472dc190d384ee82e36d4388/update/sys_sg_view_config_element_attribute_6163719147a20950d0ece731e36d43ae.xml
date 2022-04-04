@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element_attribute">
+    <sys_sg_view_config_element_attribute action="INSERT_OR_UPDATE">
+        <description>text_02_FieldValue</description>
+        <name display_value="FieldValue">c2eed5c2b7321010df65f6efce11a9cf</name>
+        <sys_class_name>sys_sg_view_config_element_attribute</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-29 07:56:38</sys_created_on>
+        <sys_id>6163719147a20950d0ece731e36d43ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>c2eed5c2b7321010df65f6efce11a9cf</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_attribute_6163719147a20950d0ece731e36d43ae</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-29 07:56:38</sys_updated_on>
+        <translated_value/>
+        <value>administering_nurse</value>
+        <view_config_element display_value="text_02_element">2d63719147a20950d0ece731e36d43ab</view_config_element>
+    </sys_sg_view_config_element_attribute>
+    <sys_translated_text action="delete_multiple" query="documentkey=6163719147a20950d0ece731e36d43ae"/>
+</record_update>

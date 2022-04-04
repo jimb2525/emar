@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_uib_screen_test_values">
+    <sys_uib_screen_test_values action="INSERT_OR_UPDATE">
+        <macroponent_config>{
+  "table" : "x_snc_elara_data_0_patient",
+  "sysId" : "53d70650476dc190d384ee82e36d430f"
+}</macroponent_config>
+        <screen display_value="Tabbed View">5a488f92472d4990d0ece731e36d43e1</screen>
+        <sys_class_name>sys_uib_screen_test_values</sys_class_name>
+        <sys_created_by>dan.munk</sys_created_by>
+        <sys_created_on>2022-02-10 23:38:39</sys_created_on>
+        <sys_id>da488f92472d4990d0ece731e36d43e8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_uib_screen_test_values_da488f92472d4990d0ece731e36d43e8</sys_update_name>
+        <sys_updated_by>dan.munk</sys_updated_by>
+        <sys_updated_on>2022-02-11 00:05:30</sys_updated_on>
+    </sys_uib_screen_test_values>
+</record_update>

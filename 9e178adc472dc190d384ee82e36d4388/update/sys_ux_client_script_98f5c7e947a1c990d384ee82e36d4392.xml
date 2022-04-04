@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>58d17acf0b531010a8b1c96237673a68</includes>
+        <macroponent display_value="Playbook">40f5c7e947a1c990d384ee82e36d437b</macroponent>
+        <name>Reference link clicked</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({api, event, helpers, imports}) {
+    const {
+        routeMapping,
+        buildDefaultRoutePayload
+    } = imports["global.recordRoutesMapping"]();
+    var route = 'record';
+    var targetRoute = '';
+    const defaultRoutePayload = buildDefaultRoutePayload(route, targetRoute, event);
+    const routeMap = api.data.dynamic_routing_list.routeMap;
+    const payload = routeMapping(routeMap, defaultRoutePayload, event);
+    const {
+        emit
+    } = api;
+    emit('NAV_ITEM_SELECTED', payload);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-08 15:32:57</sys_created_on>
+        <sys_id>98f5c7e947a1c990d384ee82e36d4392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reference link clicked</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_client_script_98f5c7e947a1c990d384ee82e36d4392</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-08 15:32:57</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

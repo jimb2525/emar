@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Launcher Button">6124979547aa0950d0ece731e36d4303</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon display_value="User Icon">6124579547aa0950d0ece731e36d43ff</icon>
+        <label>eMAR Calendar View Launcher Button Instance</label>
+        <location>top</location>
+        <name>eMAR Calendar View Launcher Button Instance</name>
+        <order/>
+        <parent>c791baf0472e4550d0ece731e36d43c1</parent>
+        <parent_table>sys_sg_applet_launcher</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-29 14:59:20</sys_created_on>
+        <sys_id>ad241f9547aa0950d0ece731e36d4397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>eMAR Calendar View Launcher Button Instance</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_button_instance_ad241f9547aa0950d0ece731e36d4397</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-29 14:59:20</sys_updated_on>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=ad241f9547aa0950d0ece731e36d4397"/>
+</record_update>

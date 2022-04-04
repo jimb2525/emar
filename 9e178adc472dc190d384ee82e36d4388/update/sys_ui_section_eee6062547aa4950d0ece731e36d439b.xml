@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Activity" section_id="eee6062547aa4950d0ece731e36d439b" sys_domain="global" table="x_snc_electronic_0_mar_calendar" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>0</position>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
+            <sys_id>2ae6462547aa4950d0ece731e36d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>1</position>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
+            <sys_id>aee6462547aa4950d0ece731e36d434b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments_and_work_notes</element>
+            <position>2</position>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
+            <sys_id>26e6462547aa4950d0ece731e36d434c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>3</position>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
+            <sys_id>aae6462547aa4950d0ece731e36d434c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Activity</caption>
+            <header>false</header>
+            <name>x_snc_electronic_0_mar_calendar</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 04:00:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eee6062547aa4950d0ece731e36d439b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_electronic_0_mar_calendar</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+            <sys_update_name>sys_ui_section_eee6062547aa4950d0ece731e36d439b</sys_update_name>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 04:00:22</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

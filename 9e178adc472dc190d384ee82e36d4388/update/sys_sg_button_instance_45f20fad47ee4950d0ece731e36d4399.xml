@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="New Medication (eMAR)">887132e147ae4950d0ece731e36d4356</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>New Medication</label>
+        <location>trailing_swipe</location>
+        <name>New Medication</name>
+        <order>10</order>
+        <parent>a9bca3d047b98910d384ee82e36d436e</parent>
+        <parent_table>sys_sg_master_item</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 08:22:42</sys_created_on>
+        <sys_id>45f20fad47ee4950d0ece731e36d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Medication</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_button_instance_45f20fad47ee4950d0ece731e36d4399</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 08:22:42</sys_updated_on>
+        <table>x_snc_electronic_0_medication</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=45f20fad47ee4950d0ece731e36d4399"/>
+</record_update>

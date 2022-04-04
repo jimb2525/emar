@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes>d67f1bbeb7e21010ad44ea56ee11a9d3,e6a9d997b7b61010ad44ea56ee11a911</includes>
+        <macroponent display_value="Visual Board Demo Page">5a0e553e474e4150d384ee82e36d4334</macroponent>
+        <name>Visual Board Load Success Script</name>
+        <required_translations/>
+        <script><![CDATA[function script({api, event, imports, helpers}) { 
+      const {
+        emit: dispatch
+    } = api;
+    const {
+        'sn_vtb.stateUpdates': stateUpdatesInclude,
+        'sn_vtb.notificationHandler': notificationHandlerInclude
+    } = imports;
+    const {
+        setBoardState,
+        setAMBState,
+    } = stateUpdatesInclude();
+    const {
+        dismissLoader,
+        showAlert
+    } = notificationHandlerInclude();
+
+    const boardState = api.data.visualBoardLoadCompositeDataBroker.visualBoardLoadDataTransform.board;
+    console.log("boardState: ", boardState);
+
+    boardState.translatedMessages = api.state.translatedMessages || {};
+    setBoardState(api, boardState);
+    setAMBState(api, true);
+
+    dismissLoader(api);
+    console.log("Board load completed");
+ }]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-03-09 01:42:47</sys_created_on>
+        <sys_id>6a0e553e474e4150d384ee82e36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visual Board Load Success Script</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_client_script_6a0e553e474e4150d384ee82e36d4371</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-03-09 01:42:47</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

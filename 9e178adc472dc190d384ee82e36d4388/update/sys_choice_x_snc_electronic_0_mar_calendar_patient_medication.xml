@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="patient_medication" table="x_snc_electronic_0_mar_calendar" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>patient_medication</element>
+            <name>x_snc_electronic_0_mar_calendar</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 09:00:25</sys_created_on>
+            <sys_id>6d9b832d47228950d0ece731e36d4388</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>patient_medication</sys_name>
+            <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+            <sys_update_name>sys_choice_x_snc_electronic_0_mar_calendar_patient_medication</sys_update_name>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 09:00:25</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>53d70650476dc190d384ee82e36d430f</dependent_value>
+            <element>patient_medication</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Klonopin</label>
+            <language>en</language>
+            <name>x_snc_electronic_0_mar_calendar</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 09:00:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>773b47e947228950d0ece731e36d4308</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 09:12:41</sys_updated_on>
+            <value>Klonopin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>53d70650476dc190d384ee82e36d430f</dependent_value>
+            <element>patient_medication</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Olanzapine</label>
+            <language>en</language>
+            <name>x_snc_electronic_0_mar_calendar</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>mike.cornell</sys_created_by>
+            <sys_created_on>2022-03-30 09:00:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>659b83a947228950d0ece731e36d43c9</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>mike.cornell</sys_updated_by>
+            <sys_updated_on>2022-03-30 09:12:48</sys_updated_on>
+            <value>Olanzapine</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

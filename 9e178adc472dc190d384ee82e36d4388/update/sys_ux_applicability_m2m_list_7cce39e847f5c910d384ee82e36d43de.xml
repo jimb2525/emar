@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Nurse Access">6697392047f5c910d384ee82e36d431e</applicability>
+        <list display_value="All Nurses">9c684690476dc190d384ee82e36d43cf</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-17 18:04:07</sys_created_on>
+        <sys_id>7cce39e847f5c910d384ee82e36d43de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_7cce39e847f5c910d384ee82e36d43de</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-17 18:04:07</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

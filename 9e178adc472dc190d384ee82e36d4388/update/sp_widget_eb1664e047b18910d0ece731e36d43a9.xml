@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function(spModal) {
+  /* widget controller */
+  var c = this;
+		
+	
+	c.medications = c.data.medications;
+	c.patient = c.data.patient;
+	
+	c.daysInMonth = 28;
+	c.days = [];
+	for (var i = 0; i < c.daysInMonth; i++) {
+		c.days.push(i+1);
+	}
+
+	c.ngClass = function(col) {
+		//{{col.sys_id ? (col.refused == 'true' ? 'X' : '√') : ''}}
+		if (col.refused == 'true') {
+			return { 'fa-times': true };
+		} else {
+			return { 'fa-check': true };
+		}
+	}
+	
+	c.onWidget = function(col, medication) {
+		var query = '';
+		if (col.sys_id == -1 ) {
+			query = 'medication=' + medication.sys_id;
+			console.log('query', query)
+		}
+		
+        spModal.open({
+            title: 'Medication Administration Record',
+            widget: 'widget-form', 
+            widgetInput: {
+				table: 'x_snc_electronic_0_medication_administration',
+				sys_id: col.sys_id,
+				query: query
+			}
+        }).then(function() {
+            console.log('widget dismissed');
+        });
+    }
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>tr, td {&#13;
+  border: 1px solid #000;&#13;
+}&#13;
+&#13;
+table {&#13;
+  width: 100%;&#13;
+}&#13;
+&#13;
+td {&#13;
+  width: 15px;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.big-td {&#13;
+  width: 30%;&#13;
+  vertical-align: top;&#13;
+      padding: 1rem;&#13;
+  text-align: left;&#13;
+}&#13;
+&#13;
+.text-align-center {&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+.uppercase {&#13;
+  text-transform: uppercase;&#13;
+}&#13;
+&#13;
+span.white {&#13;
+  color: transparent;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>mar-calendar</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>MAR Calendar</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+
+	var BOB_SMITH = '53d70650476dc190d384ee82e36d430f';
+	
+	//var patient = BOB_SMITH;
+	var patient = $sp.getParameter('patient');
+
+	var medications = [];
+
+	var grMed = new GlideRecord('x_snc_electronic_0_medication');
+	grMed.addQuery('patient', patient);
+	//grMed.addQuery('');
+	grMed.query();
+	while (grMed.next()) {
+		var medication_sys_id = grMed.getUniqueValue();
+		var table = createTable();
+		var medication = {
+			product: getProduct(grMed.getValue('medication_product')),
+			table: mapAdminToTable(medication_sys_id, table),
+			start_date: grMed.getDisplayValue('start_date'),
+			route: grMed.getDisplayValue('route'),
+			frequency: grMed.getDisplayValue('frequency'),
+			dosage: grMed.getDisplayValue('dosage'),
+			sys_id: medication_sys_id
+		}
+		medications.push(medication);
+	}
+
+	//gs.info(JSON.stringify(medications))
+	data.medications = medications;
+	
+	var grPat = new GlideRecord('x_snc_elara_data_0_patient');
+	if (grPat.get(patient)) {
+		data.patient = {
+			name: grPat.getDisplayValue('name'),
+			patient_id: grPat.getDisplayValue('patient_id'),
+			date_of_birth: grPat.getDisplayValue('date_of_birth'),
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+
+	function getProduct(med_product_sys_id) {
+		var grProduct = new GlideRecord('x_snc_elara_data_0_medication_product_model');
+		grProduct.addQuery('sys_id', med_product_sys_id);
+		grProduct.query();
+		if (grProduct.next()) {
+			return {
+				display_name: grProduct.getDisplayValue('display_name'),
+				name: grProduct.getDisplayValue('name'),
+				manufacturer: grProduct.getDisplayValue('manufacturer'),
+				medication_form: grProduct.getDisplayValue('medication_form'),
+				medication_type: grProduct.getDisplayValue('medication_type'),
+			}
+		}
+	}
+
+	function mapAdminToTable(medication_sys_id, table) {
+		var grAdmin = new GlideRecord('x_snc_electronic_0_medication_administration');
+		grAdmin.addQuery('medication', medication_sys_id);
+		grAdmin.query();
+		while (grAdmin.next()) {
+			var time_administered = grAdmin.getValue('time_administered')
+			var gdt = new GlideDateTime(time_administered);
+			var day = gdt.getDayOfMonthLocalTime() - 1; // - 1 for correct array index
+			var month = gdt.getMonthLocalTime();
+			var admin = {
+				refused: grAdmin.getDisplayValue('refused'),
+				sys_id: grAdmin.getUniqueValue()
+			}
+			for (var i in table) {
+				if (table[i][day].sys_id){
+					continue;
+				} else {
+					table[i][day] = admin;
+					break;
+				}
+			}
+		}
+
+		return table;
+	}
+
+	function createTable() {
+		var FEB = 28;
+		var daysInMonth = FEB;
+		var table = [[], [], [], []]; // table[x][y] x = time of day, y = day number
+		for (var i in table) {
+			for (var j = 0; j < daysInMonth; j++) {
+				table[i][j] = {};
+			}
+		}
+		return table;
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>trevor.roberts</sys_created_by>
+        <sys_created_on>2022-02-17 11:36:40</sys_created_on>
+        <sys_id>eb1664e047b18910d0ece731e36d43a9</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_name>MAR Calendar</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sp_widget_eb1664e047b18910d0ece731e36d43a9</sys_update_name>
+        <sys_updated_by>trevor.roberts</sys_updated_by>
+        <sys_updated_on>2022-02-17 15:50:26</sys_updated_on>
+        <template><![CDATA[<div>
+  <h1>MAR Calendar</h1>
+  <h4 class="text-align-center">Month/Year: 02/2022</h4>
+  <!-- header info -->
+  <table>
+    <tbody>
+      <tr>
+        <td rowspan="3" class="big-td">
+          <strong>ID: </strong> {{c.patient.patient_id}}
+          <br/>
+          <br/>
+          <strong>Name: </strong> {{c.patient.name}}
+
+          <br/>
+          <strong>DOB: </strong> {{c.patient.date_of_birth}}
+        
+        </td>
+        <td>AM</td>
+        <td ng-repeat="col in c.days track by $index"><span ng-if="!col.sys_id" class="fa fa-times white"></span></td>
+      </tr>
+      <tr>
+        <td>PM</td>
+        <td ng-repeat="col in c.days track by $index"><span ng-if="!col.sys_id" class="fa fa-times white"></span></td>
+      </tr>
+      <tr>
+        <td>Hr</td>
+        <td ng-repeat="col in c.days track by $index">{{col}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- meds -->
+  <table ng-repeat="medication in c.medications">
+    <tbody>
+      <tr ng-repeat="row in medication.table track by $index">
+        <td rowspan="4" class="big-td" ng-if="$index == 0">
+          <strong class="uppercase">{{medication.product.display_name}}</strong> &nbsp;&nbsp;&nbsp;&nbsp;
+          {{medication.start_date}}
+		<br/>
+		<br/>
+          Dose={{medication.dosage}}, Frequency={{medication.frequency}}, Route={{medication.route}}
+		<br/>
+        
+        </td>
+        <td><span class="white">AM</span></td>
+        <td ng-repeat="col in row track by $index">
+          <a href="javascript:void(0)" ng-if="col.sys_id" ng-click="c.onWidget(col)"><span ng-class="c.ngClass(col)" class="fa"></span></a>
+          <span ng-if="!col.sys_id" class="fa fa-times white" ng-click="c.onWidget({sys_id:-1}, medication)"></span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>]]></template>
+    </sp_widget>
+</record_update>

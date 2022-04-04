@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_pd_activity_definition">
+    <sys_pd_activity_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <activity_type display_value="Record">e12af577871333003058d1a936cb0ba4</activity_type>
+        <badge/>
+        <category/>
+        <description/>
+        <input_display_preferences/>
+        <inputs/>
+        <label>Send Medication Refusal to DW</label>
+        <name>send_medication_refusal_to_dw</name>
+        <source>3f523d6647a98990d0ece731e36d43ad</source>
+        <source_type>sys_hub_flow</source_type>
+        <sys_class_name>sys_pd_activity_definition</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-11 12:05:45</sys_created_on>
+        <sys_id>cd1331a6476501d0d384ee82e36d4330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Medication Refusal to DW</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_pd_activity_definition_cd1331a6476501d0d384ee82e36d4330</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-11 12:05:45</sys_updated_on>
+        <system_level>false</system_level>
+        <table>x_snc_electronic_0_medication_administration</table>
+        <type_vals/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_pd_activity_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=cd1331a6476501d0d384ee82e36d4330"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_input_3f523d6647a98990d0ece731e36d43ad^id=cd1331a6476501d0d384ee82e36d4330"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_pd_activity_type_prop_e12af577871333003058d1a936cb0ba4^id=cd1331a6476501d0d384ee82e36d4330"/>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config">
+    <sys_sg_view_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Administration Detail Screen View Config</name>
+        <sys_class_name>sys_sg_view_config</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-04 14:40:27</sys_created_on>
+        <sys_id>d493521447adc190d384ee82e36d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Administration Detail Screen View Config</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_view_config_d493521447adc190d384ee82e36d43fd</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-04 14:40:27</sys_updated_on>
+        <table>x_snc_electronic_0_medication_administration</table>
+        <template display_value="Applet 01">6bb0be5c41a71010f877183fc9b8be0c</template>
+    </sys_sg_view_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=d493521447adc190d384ee82e36d43fd"/>
+</record_update>

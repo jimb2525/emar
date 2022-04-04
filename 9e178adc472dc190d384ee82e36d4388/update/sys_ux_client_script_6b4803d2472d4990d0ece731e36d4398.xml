@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Visual Board Demo Page">234803d2472d4990d0ece731e36d4383</macroponent>
+        <name>Visual Board Confirmation Model Script</name>
+        <required_translations/>
+        <script><![CDATA[function handler({api, event, imports, helpers}) {
+	const {modalId, modalData} = event.payload;
+	api.setState('modalId',  modalId);
+	if (modalId === 'cardDetails') {
+		api.setState('cardDetails', {
+			...modalData,
+			table: modalData.record.sys_class_name,
+			recordId: modalData.record.sys_id,
+			view: "workspace",
+			isVisible: true
+		});
+	} else {
+                 api.setState('modalData', {
+                ...modalData,
+                headerLabel: modalData.modalData.headerLabel,
+                primaryButtonLabel: modalData.modalData.footerActions[0].label,
+                secondaryButtonLabel: modalData.modalData.footerActions[1].label,
+                content: modalData.modalData.content
+              });
+		helpers.modal.open("[component-id$='vtbConfirmationModal']");
+	}
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>dan.munk</sys_created_by>
+        <sys_created_on>2022-02-10 23:38:44</sys_created_on>
+        <sys_id>6b4803d2472d4990d0ece731e36d4398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visual Board Confirmation Model Script</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_client_script_6b4803d2472d4990d0ece731e36d4398</sys_update_name>
+        <sys_updated_by>dan.munk</sys_updated_by>
+        <sys_updated_on>2022-02-10 23:38:44</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

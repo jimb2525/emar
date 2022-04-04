@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_param_map">
+    <sys_sg_screen_param_map action="INSERT_OR_UPDATE">
+        <item_parameter display_value="sys_id">ae49639847798910d384ee82e36d4305</item_parameter>
+        <screen/>
+        <sys_class_name>sys_sg_screen_param_map</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 07:38:07</sys_created_on>
+        <sys_id>d49fefd447b98910d384ee82e36d43e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ae49639847798910d384ee82e36d4305</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_screen_param_map_d49fefd447b98910d384ee82e36d43e8</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 07:38:07</sys_updated_on>
+        <ui_parameter display_value="patient">106faf9447b98910d384ee82e36d4356</ui_parameter>
+    </sys_sg_screen_param_map>
+</record_update>

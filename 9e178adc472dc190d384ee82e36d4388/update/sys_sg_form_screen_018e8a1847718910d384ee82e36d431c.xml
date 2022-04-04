@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>true</available_offline>
+        <data_item display_value="Patients">c0c30ad447318910d384ee82e36d431b</data_item>
+        <description>Details regarding patient</description>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="Patient Information Icon">c98e0ed447718910d384ee82e36d4358</icon>
+        <item_view/>
+        <name>Patient Information</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 00:34:05</sys_created_on>
+        <sys_id>018e8a1847718910d384ee82e36d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patient Information</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_form_screen_018e8a1847718910d384ee82e36d431c</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 00:34:05</sys_updated_on>
+        <table>x_snc_elara_data_0_patient</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="Patient Information Card">858e0ed447718910d384ee82e36d4355</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=018e8a1847718910d384ee82e36d431c"/>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_stream">
+    <sys_sg_item_stream action="INSERT_OR_UPDATE">
+        <data_item display_value="Patients">c0c30ad447318910d384ee82e36d431b</data_item>
+        <interleaved_field/>
+        <name>Patients List Stream</name>
+        <sys_class_name>sys_sg_item_stream</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 01:32:05</sys_created_on>
+        <sys_id>a2cbded847b18910d384ee82e36d437c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Patients List Stream</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_item_stream_a2cbded847b18910d384ee82e36d437c</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 01:32:05</sys_updated_on>
+        <table>x_snc_elara_data_0_patient</table>
+    </sys_sg_item_stream>
+</record_update>

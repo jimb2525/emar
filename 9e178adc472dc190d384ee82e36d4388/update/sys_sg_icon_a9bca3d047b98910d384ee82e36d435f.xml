@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_icon">
+    <sys_sg_icon action="INSERT_OR_UPDATE">
+        <icon/>
+        <name>Test Related List Record Screen Icon</name>
+        <sys_class_name>sys_sg_icon</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 07:25:38</sys_created_on>
+        <sys_id>a9bca3d047b98910d384ee82e36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test Related List Record Screen Icon</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_icon_a9bca3d047b98910d384ee82e36d435f</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 07:25:38</sys_updated_on>
+        <type>font</type>
+    </sys_sg_icon>
+</record_update>

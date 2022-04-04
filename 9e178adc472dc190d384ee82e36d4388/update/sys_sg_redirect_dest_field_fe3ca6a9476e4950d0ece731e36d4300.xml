@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_redirect_dest_field">
+    <sys_sg_redirect_dest_field action="INSERT_OR_UPDATE">
+        <button display_value="Add Medication">ba3cae69476e4950d0ece731e36d43e3</button>
+        <button_table>x_snc_electronic_0_mar_calendar</button_table>
+        <constant_value/>
+        <destination_ui_parameter display_value="patient">f5cc279047b98910d384ee82e36d43e5</destination_ui_parameter>
+        <source_field>patient</source_field>
+        <source_ui_parameter/>
+        <sys_class_name>sys_sg_redirect_dest_field</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 06:43:25</sys_created_on>
+        <sys_id>fe3ca6a9476e4950d0ece731e36d4300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>f5cc279047b98910d384ee82e36d43e5</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_redirect_dest_field_fe3ca6a9476e4950d0ece731e36d4300</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 06:44:50</sys_updated_on>
+        <type>field</type>
+    </sys_sg_redirect_dest_field>
+</record_update>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="route" table="x_snc_electronic_0_medication" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>route</element>
+            <name>x_snc_electronic_0_medication</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>james.belote</sys_created_by>
+            <sys_created_on>2022-02-11 03:03:12</sys_created_on>
+            <sys_id>7217bb5247a9cd90d384ee82e36d432e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>route</sys_name>
+            <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+            <sys_update_name>sys_choice_x_snc_electronic_0_medication_route</sys_update_name>
+            <sys_updated_by>james.belote</sys_updated_by>
+            <sys_updated_on>2022-02-11 03:03:12</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>route</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oral</label>
+            <language>en</language>
+            <name>x_snc_electronic_0_medication</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>james.belote</sys_created_by>
+            <sys_created_on>2022-02-11 03:03:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b617bb5247a9cd90d384ee82e36d432d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>james.belote</sys_updated_by>
+            <sys_updated_on>2022-02-11 03:03:12</sys_updated_on>
+            <value>oral</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>route</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intravenous</label>
+            <language>en</language>
+            <name>x_snc_electronic_0_medication</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>james.belote</sys_created_by>
+            <sys_created_on>2022-02-11 03:03:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ba17bb5247a9cd90d384ee82e36d4325</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>james.belote</sys_updated_by>
+            <sys_updated_on>2022-02-11 03:03:13</sys_updated_on>
+            <value>intravenous</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_parameter_screen">
+    <sys_sg_parameter_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <available_offline>true</available_offline>
+        <cancel_label>Cancel</cancel_label>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <header_only_on_first_page>false</header_only_on_first_page>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon/>
+        <name>Medication Input Screen</name>
+        <next_label>Next</next_label>
+        <pagination_type>all</pagination_type>
+        <prev_label>Previous</prev_label>
+        <resume>false</resume>
+        <roles_override/>
+        <submit_label>Submit</submit_label>
+        <sys_class_name>sys_sg_parameter_screen</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 08:16:13</sys_created_on>
+        <sys_id>da71432d47ee4950d0ece731e36d4393</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Medication Input Screen</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_parameter_screen_da71432d47ee4950d0ece731e36d4393</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 08:19:45</sys_updated_on>
+        <type display_value="">string</type>
+        <view_config display_value="Patient Medications Card">81b09ed847718910d384ee82e36d4386</view_config>
+    </sys_sg_parameter_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=da71432d47ee4950d0ece731e36d4393"/>
+</record_update>

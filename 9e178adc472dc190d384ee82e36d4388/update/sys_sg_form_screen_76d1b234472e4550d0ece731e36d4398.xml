@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_form_screen">
+    <sys_sg_form_screen action="INSERT_OR_UPDATE">
+        <alert/>
+        <available_offline>true</available_offline>
+        <data_item/>
+        <description/>
+        <dynamic_prefetch_count/>
+        <empty_state/>
+        <fetch_type>not_required</fetch_type>
+        <filter/>
+        <hide_filters>false</hide_filters>
+        <hide_screen_name>false</hide_screen_name>
+        <icon display_value="MAR Calendar Record Screen Icon">cbd1f234472e4550d0ece731e36d4314</icon>
+        <item_view/>
+        <name>MAR Calendar Record Screen</name>
+        <override_context_with_data_item>false</override_context_with_data_item>
+        <roles_override/>
+        <segments_height>medium</segments_height>
+        <segments_min_width>medium</segments_min_width>
+        <sys_class_name>sys_sg_form_screen</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-27 23:12:33</sys_created_on>
+        <sys_id>76d1b234472e4550d0ece731e36d4398</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MAR Calendar Record Screen</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_form_screen_76d1b234472e4550d0ece731e36d4398</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-27 23:14:09</sys_updated_on>
+        <table>x_snc_electronic_0_mar_calendar</table>
+        <use_view_config>true</use_view_config>
+        <view_config display_value="MAR Calendar Record Screen Card">32d1b234472e4550d0ece731e36d43ee</view_config>
+    </sys_sg_form_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=76d1b234472e4550d0ece731e36d4398"/>
+</record_update>

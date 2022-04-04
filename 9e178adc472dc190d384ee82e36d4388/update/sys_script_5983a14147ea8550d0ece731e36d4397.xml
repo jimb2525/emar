@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_electronic_0_mar_calendar</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update MAR Calendar</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Get days of the month
+	var getDaysInMonth = function(month,year) {
+		return new Date(year, month, 0).getDate();
+	};
+
+	var gdt = new GlideDateTime();
+	var gMonth = gdt.getMonthLocalTime();
+	var gYear = gdt.getYearLocalTime();
+	
+	var gDays = (getDaysInMonth(gMonth, gYear));
+
+	
+
+	// Datetimes
+	var timeAdministeredDT = new GlideDateTime(current.time_administered.getDisplayValue());
+	var newday = String(String(timeAdministeredDT).split(" ")[0]).split("-")[2];
+	var newtime = String(String(timeAdministeredDT).split(" ")[1]).split(":")[0];
+	
+	
+	
+	
+	// Create new record to add
+	var newRecord = {
+		"patient": String(current.patient),
+		"medication": String(current.medication.medication_product),
+		"administering_nurse": String(gs.getUserID()),
+		"time_administered": String(current.time_administered),
+		"day": String(newday),
+		"time": String(newtime),
+		"was_refused": String(current.was_refused),
+		"was_missed": String(current.was_missed),
+		"notes": String(current.notes)
+	};
+	
+	
+	
+	// Iterate through old objects in array
+	var oldObjects = [];
+	if (current.calendar_data != "") {
+		
+		var canImport = true;
+		var calendarObject = JSON.parse(current.calendar_data);
+		for (var i = 0; i < calendarObject.length; i++) {
+
+			// Identify main inputs
+			var patient = calendarObject[i].patient;
+			var medication = calendarObject[i].medication;
+			var administering_nurse = calendarObject[i].administering_nurse;
+			var day = calendarObject[i].day;
+			var time = calendarObject[i].time;
+			
+
+			// If inputs match existing calendar object, simply update the other inputs to update old object
+			if (patient == String(current.patient) && 
+				medication == String(current.medication.medication_product) && 
+				administering_nurse == String(gs.getUserID()) && 
+				newday == day && 
+				newtime == time) {
+				
+				calendarObject[i].time_administered = String(current.time_administered);
+				calendarObject[i].was_refused = String(current.was_refused);
+				calendarObject[i].was_missed = String(current.was_missed);
+				calendarObject[i].notes = String(current.notes);
+				
+				canImport = false;
+			}
+
+			// Reimport full old object, adjustments or not
+			oldObjects.push(calendarObject[i]);
+		}
+	}
+	
+	
+	
+	if (canImport == true)
+		oldObjects.push(newRecord);
+	
+	
+	
+	// Sort all arrays
+	var idx2, idx1, temp1;
+	for (idx1 = 0; idx1 < oldObjects.length; idx1++) {
+		for (idx2 = idx1 + 1; idx2 < oldObjects.length; idx2++) {
+
+			try {
+				
+				// 4 index is time field
+				if (parseInt(oldObjects[idx1].day) > parseInt(oldObjects[idx2].day)) {
+					temp1 = oldObjects[idx2];
+
+					oldObjects[idx2] = oldObjects[idx1];
+					oldObjects[idx1] = temp1;
+				}
+			}
+
+			catch(err) { }
+		}
+	}
+	
+	
+	
+	// Calendar data
+	current.calendar_data = JSON.stringify(oldObjects);
+	current.date_administered = timeAdministeredDT;
+	current.hour_administered = String(newtime);
+	
+	
+	
+	// Build Time Calendar:
+	// Set the days
+	var days = "", dayTimes = "", nightTimes = "";
+	for (var g = 1; g <= gDays; g++) {
+		
+		days += '<td>' + '<span class="fa fa-times black">' + g + '</span>' + '</td>';
+		
+		var dayBreak = false, nightBreak = false;
+		for (var x = 0; x < oldObjects.length; x++) {
+			
+			// Get first day time
+			if (g == oldObjects[x].day && oldObjects[x].time <= 12) {
+				if (dayBreak == false)
+					dayTimes += '<td>' + '<span class="fa fa-times black">' + (oldObjects[x].time) + '</span>' + '</td>';
+				
+				dayBreak = true;
+			}
+			
+			
+			
+			// Get first night time
+			else if (g == oldObjects[x].day && oldObjects[x].time > 12 && oldObjects[x].time <= 24) {
+				if (nightBreak == false)
+					nightTimes += '<td>' + '<span class="fa fa-times black">' + ('0' + (oldObjects[x].time - 12)).slice(-2) + '</span>' + '</td>';
+				
+				nightBreak = true;
+			}
+
+			
+			
+			// Break if both found
+			if (dayBreak == true && nightBreak == true)
+				break;
+			
+			
+			
+			// If never found, then add a row anyway to keep consistent columns
+			if (x == oldObjects.length - 1) {
+				if (dayBreak == false)
+					dayTimes += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+				
+				if (nightBreak == false)
+					nightTimes += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+			}		
+		}
+	}
+		
+	
+
+var table = 
+  '<div>' + 
+  '<h1>MAR Calendar</h1>' + 
+  '<h4 class="text-align-center">Month/Year: ' + ('0' + gMonth).slice(-2) + '/' + gYear + '</h4>' + 
+  '<table>' + 
+    '<tbody>' + 
+      '<tr>' + 
+        '<td rowspan="3" class="big-td">' + 
+          '<strong>ID: </strong>' + current.patient.patient_id + 
+          '<br/>' + 
+          '<br/>' + 
+          '<strong>Name: </strong>' + current.patient.name + 
+
+          '<br/>' + 
+          '<strong>DOB: </strong>' + current.patient.date_of_birth + 
+        
+        '</td>' + 
+        '<td>AM</td>' + 
+
+		dayTimes + 
+	
+      '</tr>' + 
+
+
+      '<tr>' + 
+        '<td>PM</td>' +
+	
+		nightTimes + 
+	
+      '</tr>' +
+      '<tr>' + 
+        '<td>Hr</td>' + 
+	
+		days + 
+	
+      '</tr>' + 
+    '</tbody>';
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////////////////
+	
+	
+	
+	
+	// Build Medication Adherence Calendar:
+	var days = "", wasMissed = "", wasRefused = "";
+	for (var g = 1; g <= gDays; g++) {
+		
+		days += '<td>' + '<span class="fa fa-times black">' + g + '</span>' + '</td>';
+		
+		var missBreak = false, refuseBreak = false;
+		for (var x = 0; x < oldObjects.length; x++) {
+			
+			// Hardcoded
+			if (oldObjects[x].medication == "413f79dc47e9c190d384ee82e36d43a3") {
+
+
+				if (g == oldObjects[x].day) {
+						wasMissed += '<td>' + '<span class="fa fa-times black">' + (String(oldObjects[x].was_missed) == "false" ? "F" : "T") + 
+							'</span>' + '</td>';
+
+					wasRefused += '<td>' + '<span class="fa fa-times black">' + (String(oldObjects[x].was_refused) == "false" ? "F" : "T") + 
+						'</span>' + '</td>';
+					break;
+				}	
+			}
+			
+			if (x == oldObjects.length - 1) {
+				wasMissed += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+				wasRefused += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+			}
+		}
+	}
+	
+	
+	
+	
+	
+table += 
+    '<tbody>' + 
+      '<tr>' + 
+        '<td rowspan="3" class="big-td">' + 
+	
+          '<strong class="uppercase">' + "Klonopin" + '</strong> &nbsp;&nbsp;&nbsp;&nbsp;' + 
+          current.medication.start_date + 
+		'<br/>' + 
+		'<br/>' + 
+          'Dose=' + current.medication.dosage + ', Frequency=' + current.medication.frequency + ', Route=' + current.medication.route + 
+		'<br/>' +
+ 
+        '</td>' + 
+        '<td>M</td>' + 
+
+		wasMissed + 
+	
+      '</tr>' + 
+
+
+      '<tr>' + 
+        '<td>R</td>' +
+	
+		wasRefused + 
+	
+      '</tr>' + 
+	
+    '</tbody>';
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////////////////
+	
+	
+	
+
+	// Build Medication Adherence Calendar:
+	var days = "", wasMissed = "", wasRefused = "";
+	for (var g = 1; g <= gDays; g++) {
+		
+		days += '<td>' + '<span class="fa fa-times black">' + g + '</span>' + '</td>';
+		
+		var missBreak = false, refuseBreak = false;
+		for (var x = 0; x < oldObjects.length; x++) {
+			
+			// Hardcoded
+			if (oldObjects[x].medication == "1a500a54472dc190d384ee82e36d43eb") {
+
+
+				if (g == oldObjects[x].day) {
+						wasMissed += '<td>' + '<span class="fa fa-times black">' + (String(oldObjects[x].was_missed) == "false" ? "F" : "T") + 
+							'</span>' + '</td>';
+
+					wasRefused += '<td>' + '<span class="fa fa-times black">' + (String(oldObjects[x].was_refused) == "false" ? "F" : "T") + 
+						'</span>' + '</td>';
+					break;
+				}
+			}
+			
+			if (x == oldObjects.length - 1) {
+				wasMissed += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+				wasRefused += '<td>' + '<span class="fa fa-times black">' + '' + '</span>' + '</td>';
+			}
+		}
+	}
+	
+	
+	
+	
+table += 
+
+
+
+    '<tbody>' + 
+      '<tr>' + 
+        '<td rowspan="3" class="big-td">' + 
+	
+          '<strong class="uppercase">' + "Olanzapine" + '</strong> &nbsp;&nbsp;&nbsp;&nbsp;' + 
+          current.medication.start_date + 
+		'<br/>' + 
+		'<br/>' + 
+          'Dose=' + current.medication.dosage + ', Frequency=' + current.medication.frequency + ', Route=' + current.medication.route + 
+		'<br/>' +
+ 
+        '</td>' + 
+        '<td>M</td>' + 
+
+		wasMissed + 
+	
+      '</tr>' + 
+
+
+      '<tr>' + 
+        '<td>R</td>' +
+	
+		wasRefused + 
+	
+      '</tr>' + 
+	
+    '</tbody>' + 
+	'</table>' + 
+'</div>';
+	
+	
+	
+	
+	
+table += 
+'<style>' + 
+  'tr, td {' + 
+  'border: 1px solid #000;' + 
+'}' + 
+
+'table {' + 
+  'width: 100%;' + 
+'}' + 
+
+'td {' + 
+  'width: 15px;' + 
+  'text-align: center;' + 
+'}' + 
+
+'.big-td {' + 
+  'width: 30%;' + 
+  'vertical-align: top;' + 
+  'padding: 1rem;' + 
+  'text-align: left;' + 
+'}' + 
+
+'.text-align-center {' + 
+  'text-align: center;' + 
+'}' + 
+
+'.uppercase {' + 
+  'text-transform: uppercase;' + 
+'}' + 
+
+'span.white {' + 
+  'color: transparent;' + 
+'}' + 
+'</style>';
+
+	
+	
+current.calendar_view = table;
+	
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-28 12:11:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5983a14147ea8550d0ece731e36d4397</sys_id>
+        <sys_mod_count>169</sys_mod_count>
+        <sys_name>Update MAR Calendar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_script_5983a14147ea8550d0ece731e36d4397</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 18:30:13</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=5983a14147ea8550d0ece731e36d4397"/>
+</record_update>

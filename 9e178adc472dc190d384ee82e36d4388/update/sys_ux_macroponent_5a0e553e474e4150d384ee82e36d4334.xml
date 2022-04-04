@@ -1,0 +1,1877 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
+    <sys_ux_macroponent action="INSERT_OR_UPDATE">
+        <associated_types/>
+        <category>page</category>
+        <component_dependencies/>
+        <composition>[ {
+  "elementId" : "addCardGuidedBoard",
+  "elementLabel" : "Card Form modal for guided board",
+  "propertyValues" : {
+    "boardId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardState", "sys_id" ]
+      }
+    },
+    "table" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardState", "table" ]
+      }
+    },
+    "recordId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "recordId" ]
+      }
+    },
+    "errorMessage" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "errorMessage" ]
+      }
+    },
+    "isVisible" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "isVisible" ]
+      }
+    },
+    "query" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "query" ]
+      }
+    },
+    "laneId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "lane_id" ]
+      }
+    },
+    "swimlaneId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "swim_lane_id" ]
+      }
+    },
+    "position" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardForm", "position" ]
+      }
+    },
+    "view" : {
+      "type" : "JSON_LITERAL",
+      "value" : "workspace"
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "cardFormModalClosed",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_vtb.VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_vtb.VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "1e0e553e474e4150d384ee82e36d4361"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cardClosedInGuidedBoardTarget",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "cardAddedInGuidedBoard",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_vtb.VTB#DATA_DRIVEN_CARD_ADDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_vtb.VTB#DATA_DRIVEN_CARD_ADDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "de0e553e474e4150d384ee82e36d4343"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cardAddedInGuidedBoardTarget",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "ed014a4e85717b707d1ece30424cd30a",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "cardDetailsModal",
+  "elementLabel" : "Card Details Modal",
+  "propertyValues" : {
+    "table" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardDetails", "table" ]
+      }
+    },
+    "recordId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardDetails", "recordId" ]
+      }
+    },
+    "view" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardDetails", "view" ]
+      }
+    },
+    "isVisible" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "cardDetails", "isVisible" ]
+      }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "cardDetailsModalClosed",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_vtb.VTB#CARD_DETAILS_MODAL_CLOSED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_vtb.VTB#CARD_DETAILS_MODAL_CLOSED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "1e0e553e474e4150d384ee82e36d4361"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "cardDetailsModalClosedTarget",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "8637a86639e68f971148cb49d6ddc178",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "vtbContainerMacroponent",
+  "elementLabel" : "VTB AMB Subscriber",
+  "propertyValues" : {
+    "boardId" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardState", "sys_id" ]
+      }
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ambEventAction",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_vtb.VTB#AMB_MESSAGE_RECEIVED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_vtb.VTB#AMB_MESSAGE_RECEIVED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "ea0e553e474e4150d384ee82e36d4390"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ambEventActionScript",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "e8167759f3d405be87f3e863831d80a1",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "nowVisualBoardMacroponent",
+  "elementLabel" : "Now Visual Board",
+  "propertyValues" : {
+    "id" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "sys_id" ]
+      }
+    },
+    "cards" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cards" ]
+      }
+    },
+    "lanes" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "lanes" ]
+      }
+    },
+    "swimlanes" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlanes" ]
+      }
+    },
+    "cardTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cardTag" ]
+      }
+    },
+    "cardDraggable" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cardDraggable" ]
+      }
+    },
+    "cardDragPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cardDragPlaceholderTag" ]
+      }
+    },
+    "cardDropPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cardDropPlaceholderTag" ]
+      }
+    },
+    "laneHeaderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneHeaderTag" ]
+      }
+    },
+    "laneFooterTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneFooterTag" ]
+      }
+    },
+    "laneDraggable" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneDraggable" ]
+      }
+    },
+    "laneDragPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneDragPlaceholderTag" ]
+      }
+    },
+    "laneDropPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneDropPlaceholderTag" ]
+      }
+    },
+    "swimlaneHeaderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneHeaderTag" ]
+      }
+    },
+    "swimlaneHeaderCloneTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneHeaderCloneTag" ]
+      }
+    },
+    "swimlaneDraggable" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneDraggable" ]
+      }
+    },
+    "swimlaneDragPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneDragPlaceholderTag" ]
+      }
+    },
+    "swimlaneDropPlaceholderTag" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneDropPlaceholderTag" ]
+      }
+    },
+    "cardConfigOverride" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "cardConfigOverride" ]
+      }
+    },
+    "laneConfigOverride" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "laneConfigOverride" ]
+      }
+    },
+    "swimlaneConfigOverride" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "swimlaneConfigOverride" ]
+      }
+    },
+    "useArrowNavigation" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "useArrowNavigation" ]
+      }
+    },
+    "arrowNavigableElements" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "arrowNavigableElements" ]
+      }
+    },
+    "wrapperDomEvents" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "wrapperDomEvents" ]
+      }
+    },
+    "styles" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "_style_" ]
+      }
+    },
+    "loadTagsFromUxf" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "loadTagsFromUxf" ]
+      }
+    },
+    "customScrollOptions" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "boardFilteredState", "customScrollOptions" ]
+      }
+    },
+    "cloneMode" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "daActionMapping" : {
+      "type" : "JSON_LITERAL",
+      "value" : {
+        "VTB#AMB_MESSAGE_RECEIVED" : {
+          "assignmentId" : "0152e2f453922010c5e2ddeeff7b121c",
+          "name" : "VTB_AMB_MESSAGE_RECIEVED",
+          "label" : "AMB Message Recieved",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB_AMB_MESSAGE_RECIEVED",
+          "actionPayload" : "{\r\n        \"type\": \"{{type}}\",\r\n        \"payload\": \"{{payload}}\"\r\n}"
+        },
+        "VTB#LANE_HEADER_UPDATED" : {
+          "assignmentId" : "03fdd23453922010c5e2ddeeff7b121c",
+          "name" : "VTB_LANE_HEADER_UPDATED",
+          "label" : "Lane Header Updated",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB_LANE_HEADER_UPDATED",
+          "actionPayload" : "{\r\n        \"updateLaneInput\": \"{{updateLaneInput}}\"\r\n}"
+        },
+        "VTB#CONFIRMATION_MODAL_SELECTED" : {
+          "assignmentId" : "0c8e127453922010c5e2ddeeff7b125f",
+          "name" : "VTB#CONFIRMATION_MODAL_SELECTED",
+          "label" : "Confirmation Modal Selected",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#CONFIRMATION_MODAL_SELECTED",
+          "actionPayload" : "{\r\n        \"modalId\": \"{{modalId}}\",\r\n        \"modalData\": \"{{modalData}}\"\r\n}"
+        },
+        "VTB#SWIMLANE_HEADER_UPDATED" : {
+          "assignmentId" : "1c0b9eb053922010c5e2ddeeff7b1202",
+          "name" : "VTB_SWIMLANE_HEADER_UPDATED",
+          "label" : "Swimlane Header Updated",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB_SWIMLANE_HEADER_UPDATED",
+          "actionPayload" : "{\r\n        \"id\": \"{{id}}\",\r\n        \"value\": \"{{value}}\"\r\n}"
+        },
+        "VTB#CARD_ARCHIVED" : {
+          "assignmentId" : "228a5ab053922010c5e2ddeeff7b1260",
+          "name" : "VTB#CARD_ARCHIVED",
+          "label" : "Card Archived",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#CARD_ARCHIVED",
+          "actionPayload" : "{\r\n        \"boardId\": \"{{boardId}}\"\r\n}"
+        },
+        "VTB#LANE_HIDE_SELECTED" : {
+          "assignmentId" : "3e816eb453922010c5e2ddeeff7b12f1",
+          "name" : "VTB#LANE_HIDE_SELECTED",
+          "label" : "Lane Hide",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#LANE_HIDE_SELECTED",
+          "actionPayload" : "{\r\n        \"laneId\": \"{{laneId}}\"\r\n}"
+        },
+        "VTB#CARD_DETAILS_MODAL_CLOSED" : {
+          "assignmentId" : "4492e6f453922010c5e2ddeeff7b1269",
+          "name" : "VTB_CARD_DETAILS_MODAL_CLOSED",
+          "label" : "Card Details Modal Closed",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB_CARD_DETAILS_MODAL_CLOSED",
+          "actionPayload" : "{\r\n        \"value\": \"{{value}}\"\r\n}"
+        },
+        "VTB#LANE_DELETED" : {
+          "assignmentId" : "4a012ab453922010c5e2ddeeff7b1282",
+          "name" : "VTB#LANE_DELETED",
+          "label" : "Lane Deleted",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#LANE_DELETED",
+          "actionPayload" : "{\r\n        \"boardId\": \"{{boardId}}\",\r\n        \"laneId\": \"{{laneId}}\"\r\n}"
+        },
+        "NOW_VISUAL_BOARD#LANE_MOVED" : {
+          "assignmentId" : "4b3e5e3453922010c5e2ddeeff7b1246",
+          "name" : "VTB#LANE_MOVED",
+          "label" : "Lane Moved",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#LANE_MOVED",
+          "actionPayload" : "{\r\n        \"id\": \"{{id}}\",\r\n        \"fromPosition\": \"{{fromPosition}}\",\r\n         \"toPosition\": \"{{toPosition}}\"\r\n}"
+        },
+        "VTB#ADD_CARD_CLICKED" : {
+          "assignmentId" : "4dc2aaf453922010c5e2ddeeff7b12c8",
+          "name" : "VTB#ADD_CARD_CLICKED",
+          "label" : "Add Card Clicked",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#ADD_CARD_CLICKED",
+          "actionPayload" : "{\r\n        \"card\": \"{{card}}\"\r\n}"
+        },
+        "VTB#CREATE_LANE_ACTION_PERFORMED" : {
+          "assignmentId" : "4fc81a7053922010c5e2ddeeff7b12e4",
+          "name" : "VTB_LANE_CREATED",
+          "label" : "Lane Created",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB_LANE_CREATED",
+          "actionPayload" : "{\r\n        \"createLaneInput\": \"{{createLaneInput}}\"\r\n}"
+        },
+        "VTB#FREEFORM_CARD_ADDED" : {
+          "assignmentId" : "5a9026b453922010c5e2ddeeff7b120a",
+          "name" : "VTB#FREEFORM_CARD_ADDED",
+          "label" : "Freeform card added",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#FREEFORM_CARD_ADDED",
+          "actionPayload" : "{\r\n        \"createCardInput\": \"{{createCardInput}}\"\r\n}"
+        },
+        "VTB#SWIMLANE_EXPAND_ALL" : {
+          "assignmentId" : "5ce162f453922010c5e2ddeeff7b1216",
+          "name" : "VTB#SWIMLANE_EXPAND_ALL",
+          "label" : "Swimlane Expand All",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#SWIMLANE_EXPAND_ALL",
+          "actionPayload" : null
+        },
+        "VTB#SWIMLANE_COLLAPSE_ALL" : {
+          "assignmentId" : "661d923453922010c5e2ddeeff7b12d5",
+          "name" : "VTB#SWIMLANE_COLLAPSE_ALL",
+          "label" : "Swimlane Collapse All",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#SWIMLANE_COLLAPSE_ALL",
+          "actionPayload" : null
+        },
+        "VTB#ATTACHMENT_UPLOADED" : {
+          "assignmentId" : "88fbd6f053922010c5e2ddeeff7b12d2",
+          "name" : "VTB#ATTACHMENT_UPLOADED",
+          "label" : "Attachment Uploaded",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#ATTACHMENT_UPLOADED",
+          "actionPayload" : "{\r\n        \"type\": \"{{sysparm_type}}\",\r\n         \"action\": \"{{action}}\",\r\n         \"sysId\": \"{{sys_id}}\",\r\n         \"table\": \"{{table}}\",\r\n        \"loadAttachmentRecord\": \"{{load_attachment_record}}\",\r\n        \"data\": \"{{data}}\"\r\n}"
+        },
+        "VTB#DATA_DRIVEN_CARD_ADDED" : {
+          "assignmentId" : "9820e67453922010c5e2ddeeff7b1208",
+          "name" : "VTB#DATA_DRIVEN_CARD_ADDED",
+          "label" : "Data Driven Card Added",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#DATA_DRIVEN_CARD_ADDED",
+          "actionPayload" : "{\r\n        \"boardId\": \"{{boardId}}\",\r\n        \"taskId\": \"{{taskId}}\",\r\n        \"swimlaneId\": \"{{swimlaneId}}\",\r\n        \"position\": \"{{position}}\",\r\n        \"laneId\": \"{{laneId}}\"\r\n}"
+        },
+        "VTB#TOGGLE_SWIMLANE_BODY" : {
+          "assignmentId" : "b202a2f453922010c5e2ddeeff7b1260",
+          "name" : "VTB#TOGGLE_SWIMLANE_BODY",
+          "label" : "Swimlane Body Toggle",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#TOGGLE_SWIMLANE_BODY",
+          "actionPayload" : null
+        },
+        "NOW_VISUAL_BOARD#SWIMLANE_MOVED" : {
+          "assignmentId" : "c33a16b053922010c5e2ddeeff7b1217",
+          "name" : "VTB#SWIMLANE_MOVED",
+          "label" : "Swimlane Moved",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#SWIMLANE_MOVED",
+          "actionPayload" : "{\r\n        \"id\": \"{{id}}\",\r\n        \"fromPosition\": \"{{fromPosition}}\",\r\n        \"toPosition\": \"{{toPosition}}\"\r\n}"
+        },
+        "VTB#FREEFORM_PLACEHOLDER_CARD_REMOVED" : {
+          "assignmentId" : "decc123453922010c5e2ddeeff7b1243",
+          "name" : "VTB#FREEFORM_PLACEHOLDER_CARD_REMOVED",
+          "label" : "Freeform placeholder card removed",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#FREEFORM_PLACEHOLDER_CARD_REMOVED",
+          "actionPayload" : null
+        },
+        "VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED" : {
+          "assignmentId" : "dee992b053922010c5e2ddeeff7b12c3",
+          "name" : "VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED",
+          "label" : "Data Driven Card Form Modal Closed",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED",
+          "actionPayload" : null
+        },
+        "NOW_VISUAL_BOARD#CARD_MOVED" : {
+          "assignmentId" : "7dab16f053922010c5e2ddeeff7b122a",
+          "name" : "VTB#CARD_MOVED",
+          "label" : "Card Moved",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#CARD_MOVED",
+          "actionPayload" : "{\r\n        \"id\": \"{{id}}\",\r\n        \"fromLane\": \"{{fromLane}}\",\r\n        \"toLane\": \"{{toLane}}\",\r\n        \"fromSwimlane\": \"{{fromSwimlane}}\",\r\n        \"toSwimlane\": \"{{toSwimlane}}\",\r\n        \"fromPosition\": \"{{fromPosition}}\",\r\n        \"toPosition\": \"{{toPosition}}\"\r\n}"
+        },
+        "VTB#WRAPPER_DOM_ACTION_PERFORMED" : {
+          "assignmentId" : "7a40e516b7122010c5e229a6ee11a937",
+          "name" : "VTB#WRAPPER_DOM_ACTION_PERFORMED",
+          "label" : "Wrapper DOM action performed",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#WRAPPER_DOM_ACTION_PERFORMED",
+          "actionPayload" : "{\r\n        \"event\": \"{{event}}\",\r\n        \"name\": \"{{name}}\"\r\n}"
+        },
+        "VTB#SWIMLANE_ACTION_PERFORMED" : {
+          "assignmentId" : "f518127053922010c5e2ddeeff7b125a",
+          "name" : "VTB#SWIMLANE_ACTION_PERFORMED",
+          "label" : "Swimlane Action Performed",
+          "actionType" : "uxf_client_action",
+          "actionDispatch" : "VTB#SWIMLANE_ACTION_PERFORMED",
+          "actionPayload" : "{\r\n        \"payload\": \"{{payload}}\",\r\n        \"type\": \"{{type}}\"\r\n}"
+        }
+      }
+    },
+    "daClientActionContract" : {
+      "type" : "JSON_LITERAL",
+      "value" : null
+    }
+  },
+  "eventMappings" : [ ],
+  "slot" : "default-slot",
+  "definition" : {
+    "id" : "4e24b0556fdcf0a629b41408a5b98d86",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "CLIENT_TRANSFORM_SCRIPT",
+    "script" : {
+      "apiVersion" : "1.0.0",
+      "inlineScript" : "function({api}) {\n\t return api.state.boardState == null;\t}"
+    }
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+}, {
+  "elementId" : "vtbConfirmationModal",
+  "elementLabel" : "The Now Confirm Modal",
+  "propertyValues" : {
+    "headerLabel" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "modalData", "headerLabel" ]
+      }
+    },
+    "content" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "modalData", "content" ]
+      }
+    },
+    "primaryButtonLabel" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "modalData", "primaryButtonLabel" ]
+      }
+    },
+    "secondaryButtonLabel" : {
+      "type" : "STATE_BINDING",
+      "binding" : {
+        "address" : [ "modalData", "secondaryButtonLabel" ]
+      }
+    },
+    "size" : {
+      "type" : "JSON_LITERAL",
+      "value" : "md"
+    },
+    "preventDefaultPrimaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "preventDefaultSecondaryAction" : {
+      "type" : "JSON_LITERAL",
+      "value" : false
+    },
+    "defer" : {
+      "type" : "JSON_LITERAL",
+      "value" : true
+    }
+  },
+  "eventMappings" : [ {
+    "eventMappingId" : "ckectqoddaaaaaaoddhhhggrykzleefb",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#POSITIVE_BUTTON_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "fe0e553e474e4150d384ee82e36d43b6"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckectqffaaaaaaapddhhhgghhkffqdtfr",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "ckectqaaaaaaoddhhhggrykzleefb",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#NEGATIVE_BUTTON_CLICKED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_canvas_chrome.NOW_CONFIRM_MODAL#NEGATIVE_BUTTON_CLICKED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "1e0e553e474e4150d384ee82e36d4361"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "ckecaaaaaapddhhhgghhkffqdtfr",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "slot" : null,
+  "definition" : {
+    "id" : "13ecfe155b630010b913cbd59b81c7d6",
+    "type" : "MACROPONENT"
+  },
+  "overrides" : null,
+  "isHidden" : {
+    "type" : "CLIENT_TRANSFORM_SCRIPT",
+    "script" : {
+      "apiVersion" : "1.0.0",
+      "inlineScript" : "function({api}) {\n\t return api.state.modelId == null;\t}"
+    }
+  },
+  "isNonDestructive" : false,
+  "styles" : { }
+} ]</composition>
+        <da_relay_models/>
+        <data>[ {
+  "definition" : {
+    "id" : "d76b5141b7611010ad44ea56ee11a9ca",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "visualBoardLoadCompositeDataBroker",
+  "elementLabel" : "Visual Board Load Composite Data Broker",
+  "eventMappings" : [ {
+    "eventMappingId" : "visualBoardLoadSuccess",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "6a0e553e474e4150d384ee82e36d4371"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "visualBoardLoadSuccessScript",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "visualBoardLoadFailed",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_FETCH_FAILED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_FETCH_FAILED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "a20e553e474e4150d384ee82e36d439d"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "visualBoardLoadFailedScript",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : {
+    "boardId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "boardId" ],
+        "category" : "props"
+      }
+    },
+    "compositeDataId" : {
+      "type" : "CONTEXT_BINDING",
+      "binding" : {
+        "address" : [ "compositeDataId" ],
+        "category" : "props"
+      }
+    },
+    "daTemplateToActionName" : {
+      "type" : "JSON_LITERAL",
+      "value" : { }
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+}, {
+  "definition" : {
+    "id" : "f547801a0f121010461d37a98b767e8d",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "visualBoardMutationCompositeDataBroker",
+  "elementLabel" : "Visual Board Mutation Composite Data Broker",
+  "eventMappings" : [ {
+    "eventMappingId" : "visualBoardMutationSuccess",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_SUCCEEDED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "a20e553e474e4150d384ee82e36d4369"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "visualBoardMutationSuccessScript",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  }, {
+    "eventMappingId" : "visualBoardMutationFailed",
+    "isConfiguration" : false,
+    "offRowStorageId" : null,
+    "sourceEventApiName" : "sn_uxf.DATA_OP_FAILED",
+    "sourceEventCorrelationId" : null,
+    "sourceEventDefinition" : {
+      "apiName" : "sn_uxf.DATA_OP_FAILED",
+      "id" : null,
+      "type" : "UXEVENT"
+    },
+    "sourceEventSysId" : null,
+    "targets" : [ {
+      "broker" : null,
+      "clientScript" : {
+        "sysId" : "660e553e474e4150d384ee82e36d4385"
+      },
+      "declarativeAction" : null,
+      "event" : null,
+      "operation" : null,
+      "targetId" : "visualBoardMutationFailedScript",
+      "type" : "CLIENT_SCRIPT"
+    } ]
+  } ],
+  "inputValues" : { },
+  "readEvaluationMode" : "EXPLICIT"
+} ]</data>
+        <dispatched_events>0404f68486f1baab1dc7ef2a27a3de50,1ec283e2d558a88b2ffcb09147b04e70,49fe7d575f983bb3f8eea3fa8d40694c</dispatched_events>
+        <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
+        <handled_events>87f52916b7122010c5e229a6ee11a9fa,63e474c553562010c5e2ddeeff7b1236,0db474c553562010c5e2ddeeff7b1232,c77474c553562010c5e2ddeeff7b122f,426430c553562010c5e2ddeeff7b1209,5354b48553562010c5e2ddeeff7b12be,3c443c8553562010c5e2ddeeff7b1243,37f2b08553562010c5e2ddeeff7b126b,f7a23c8553562010c5e2ddeeff7b1240,ed82b08553562010c5e2ddeeff7b1267,6252308553562010c5e2ddeeff7b129f,1c22b48553562010c5e2ddeeff7b12ba,2ef1308553562010c5e2ddeeff7b129b,dde1f8c153d22010c5e2ddeeff7b1293,b8c1b08553562010c5e2ddeeff7b1264,e7a1b48553562010c5e2ddeeff7b12b7,e461308553562010c5e2ddeeff7b1298,9131b48553562010c5e2ddeeff7b12b4,b8d0f8c153d22010c5e2ddeeff7b1290,67a0b08553562010c5e2ddeeff7b1261,b170308553562010c5e2ddeeff7b1295,2100f8c153d22010c5e2ddeeff7b1283,ed50cbf053d22010c5e2ddeeff7b1219</handled_events>
+        <interactions/>
+        <interfaces/>
+        <internal_event_mappings>{
+  "sn_vtb.VTB#FREEFORM_CARD_ADDED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayhhrybbaaaaggjddhiiaagkeeiweiii",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_MOVED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaaxvcoqaaaaaalddhhhqwxxpfijii",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaaxyccgjaaaabbaddhhhqjjddggfffxsh",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#LANE_MOVED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaamgpzggaaaaccsddhhhqexlggbbvmdd",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#ADD_CARD_CLICKED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "ckkzyihbwaaaabbtddhiibbdgfyiilggc",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_ACTION_PERFORMED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaaybbhuffaaaaddfddhiiaaffrljhhtmb",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaaybbrdxaaaaeeeeddhiiaapqoaaiplp",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#CARD_MOVED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklccgeeccggwaaaaaalddhhhqqwfwxirm",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#LANE_DELETED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayhhhhrsaaaaggfddhiiaauyiyiiuddhh",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#LANE_HIDE_SELECTED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaamdmggvaaaabbcddhhhqtxccutyzf",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#DATA_DRIVEN_CARD_ADDED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayiijjrggaaaaggnddhiiaamasggddoaaf",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#LANE_HEADER_UPDATED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaaycccddbaaaaeewddhiiaapjjextaabv",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_COLLAPSED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayaaafdaaaaaalddhiiaaggaaaapbbvez",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaayaaldaaaaaabbaddhiiaaobbjiinfccw",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_EXPANDED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaaxzddtsaaaaddfddhhhqlweedddykjj",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaaxzjxbaaaaeeeeddhhhqiiyfgkcsn",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#CARD_ARCHIVED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayjjpwxaaaaggvddhiiaagmaaeoaajx",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#DATA_DRIVEN_CARD_FORM_MODAL_CLOSED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayiibbyggaaaagglddhiiaaofflpcchcg",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#FREEFORM_PLACEHOLDER_CARD_REMOVED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayhhiyfaaaagghddhiiaagcdhhvmay",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#WRAPPER_ACTION_PERFORMED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "ee0e553e474e4150d384ee82e36d437a"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklggseefccaaaaaamddhhhowjdnkokf",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "MACROPONENT_READY" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "5a0e553e474e4150d384ee82e36d4349"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "ckbqzybaawaaaaaadddhhhdzhhoccexbbm",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#WRAPPER_DOM_ACTION_PERFORMED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "ee0e553e474e4150d384ee82e36d437a"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklggsakggnaaaabbzddhhhohhuscdcwi",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#ATTACHMENT_UPLOADED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayaaaqwaaaaggxddhiiaaeeuwziomi",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaayajefaaaahhoddhiiaajojjrnwddz",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#CARD_DETAILS_MODAL_CLOSED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayjjhbtaaaaggtddhiiaahhhaartiggz",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_TOGGLED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayaarvqaaaaccaaddhiiaaccvxeeddbbbw",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaaybbcaawaaaaccpddhiiaagccihhggyjt",
+    "type" : "EVENT"
+  } ],
+  "sn_vtb.VTB#CREATE_LANE_ACTION_PERFORMED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayfflfeeaaaaggdddhiiaalvnsuqvi",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.SWIMLANE_MOVED_HANDLER" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaamgffyccaaaaccccddhhhqvhhhhphpua",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#CONFIRMATION_MODAL_SELECTED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaayiilteaaaaggpddhiiaaleeepffaaov",
+    "type" : "CLIENT_SCRIPT"
+  } ],
+  "sn_vtb.VTB#SWIMLANE_HEADER_UPDATED" : [ {
+    "broker" : null,
+    "clientScript" : {
+      "sysId" : "760e553e474e4150d384ee82e36d43c5"
+    },
+    "declarativeAction" : null,
+    "event" : null,
+    "operation" : null,
+    "targetId" : "cklaaxydozaaaaccaaddhhhqqwyccbbvljj",
+    "type" : "CLIENT_SCRIPT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "cklaaxypaabbaaaaccpddhhhqggjgiiipeo",
+    "type" : "EVENT"
+  } ]
+}</internal_event_mappings>
+        <layout>{
+  "default" : {
+    "children" : null,
+    "items" : [{"slotName":"default-slot","styles":{}}],
+    "root" : null,
+    "rules" : {"flex-direction":"column"},
+    "styles" : null,
+    "templateId" : null,
+    "type" : "flex"
+  }
+}</layout>
+        <macroponent_dependencies/>
+        <name>Visual Board Demo Page</name>
+        <props>[ {
+  "name" : "boardId",
+  "label" : "boardId",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : false,
+  "defaultValue" : null,
+  "description" : "",
+  "readOnly" : false,
+  "selectable" : false
+}, {
+  "name" : "compositeDataId",
+  "label" : "Composite Data ID",
+  "fieldType" : "string",
+  "typeMetadata" : null,
+  "valueType" : null,
+  "mandatory" : false,
+  "defaultValue" : "",
+  "description" : null,
+  "readOnly" : false,
+  "selectable" : false
+} ]</props>
+        <required_translations>[ {
+  "message" : "AMB Message Recieved",
+  "comment" : ""
+}, {
+  "message" : "Add Card Clicked",
+  "comment" : ""
+}, {
+  "message" : "Attachment Uploaded",
+  "comment" : ""
+}, {
+  "message" : "Card Archived",
+  "comment" : ""
+}, {
+  "message" : "Card Details Modal Closed",
+  "comment" : ""
+}, {
+  "message" : "Card Moved",
+  "comment" : ""
+}, {
+  "message" : "Confirmation Modal Selected",
+  "comment" : ""
+}, {
+  "message" : "Data Driven Card Added",
+  "comment" : ""
+}, {
+  "message" : "Data Driven Card Form Modal Closed",
+  "comment" : ""
+}, {
+  "message" : "Freeform card added",
+  "comment" : ""
+}, {
+  "message" : "Freeform placeholder card removed",
+  "comment" : ""
+}, {
+  "message" : "Lane Created",
+  "comment" : ""
+}, {
+  "message" : "Lane Deleted",
+  "comment" : ""
+}, {
+  "message" : "Lane Header Updated",
+  "comment" : ""
+}, {
+  "message" : "Lane Hide",
+  "comment" : ""
+}, {
+  "message" : "Lane Moved",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Action Performed",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Body Toggle",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Collapse All",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Expand All",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Header Updated",
+  "comment" : ""
+}, {
+  "message" : "Swimlane Moved",
+  "comment" : ""
+}, {
+  "message" : "Wrapper DOM action performed",
+  "comment" : ""
+} ]</required_translations>
+        <root_component/>
+        <root_component_config>{ }</root_component_config>
+        <root_component_definition/>
+        <schema_version>1.0.0</schema_version>
+        <state_properties>[ {
+  "name" : "translatedMessages",
+  "label" : "translatedMessages",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : { }
+  }
+}, {
+  "name" : "boardState",
+  "label" : "boardState",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "sys_id" : "",
+      "cards" : [ ],
+      "lanes" : [ {
+        "value" : "",
+        "order" : 0,
+        "non_localized_name" : "To Do",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "f7ff977c73c820101e217152a7f6a74f",
+        "name" : "To Do",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "f7ff977c73c820101e217152a7f6a74f",
+        "title" : "To Do",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : {
+          "board_type" : "FREEFORM",
+          "is2DBoard" : false,
+          "lane_filter" : "",
+          "lane_count" : 3,
+          "total_lane_count" : 3,
+          "lane_field" : "__KANBAN__",
+          "swimlane_field" : "",
+          "table" : "vtb_task",
+          "highest_lane_order" : 2,
+          "can_add_task" : true
+        }
+      }, {
+        "value" : "",
+        "order" : 1,
+        "non_localized_name" : "Doing",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "3bff977c73c820101e217152a7f6a750",
+        "name" : "Doing",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "3bff977c73c820101e217152a7f6a750",
+        "title" : "Doing",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      }, {
+        "value" : "",
+        "order" : 2,
+        "non_localized_name" : "Done",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "37ff977c73c820101e217152a7f6a751",
+        "name" : "Done",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "37ff977c73c820101e217152a7f6a751",
+        "title" : "Done",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      } ],
+      "swimlanes" : [ ],
+      "cardTag" : "sn-vtb-card",
+      "cardDraggable" : false,
+      "cardDragPlaceholderTag" : "",
+      "cardDropPlaceholderTag" : "",
+      "laneHeaderTag" : "",
+      "laneFooterTag" : "",
+      "laneDraggable" : false,
+      "laneDragPlaceholderTag" : "",
+      "laneDropPlaceholderTag" : "",
+      "swimlaneHeaderTag" : "",
+      "swimlaneHeaderCloneTag" : "",
+      "swimlaneDraggable" : false,
+      "swimlaneDragPlaceholderTag" : "",
+      "swimlaneDropPlaceholderTag" : "",
+      "cardConfigOverride" : { },
+      "laneConfigOverride" : { },
+      "swimlaneConfigOverride" : { },
+      "useArrowNavigation" : true,
+      "arrowNavigableElements" : "",
+      "wrapperDomEvents" : [ ],
+      "styles" : "",
+      "loadTagsFromUxf" : false,
+      "customScrollOptions" : { }
+    }
+  }
+}, {
+  "name" : "boardFilteredState",
+  "label" : "boardFilteredState",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "sys_id" : "",
+      "cards" : [ ],
+      "lanes" : [ {
+        "value" : "",
+        "order" : 0,
+        "non_localized_name" : "To Do",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "f7ff977c73c820101e217152a7f6a74f",
+        "name" : "To Do",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "f7ff977c73c820101e217152a7f6a74f",
+        "title" : "To Do",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : {
+          "board_type" : "FREEFORM",
+          "is2DBoard" : false,
+          "lane_filter" : "",
+          "lane_count" : 3,
+          "total_lane_count" : 3,
+          "lane_field" : "__KANBAN__",
+          "swimlane_field" : "",
+          "table" : "vtb_task",
+          "highest_lane_order" : 2,
+          "can_add_task" : true
+        }
+      }, {
+        "value" : "",
+        "order" : 1,
+        "non_localized_name" : "Doing",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "3bff977c73c820101e217152a7f6a750",
+        "name" : "Doing",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "3bff977c73c820101e217152a7f6a750",
+        "title" : "Doing",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      }, {
+        "value" : "",
+        "order" : 2,
+        "non_localized_name" : "Done",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "37ff977c73c820101e217152a7f6a751",
+        "name" : "Done",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "37ff977c73c820101e217152a7f6a751",
+        "title" : "Done",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      } ],
+      "swimlanes" : [ ],
+      "cardTag" : "sn-vtb-card",
+      "cardDraggable" : false,
+      "cardDragPlaceholderTag" : "",
+      "cardDropPlaceholderTag" : "",
+      "laneHeaderTag" : "sn-vtb-lane-header",
+      "laneFooterTag" : "",
+      "laneDraggable" : false,
+      "laneDragPlaceholderTag" : "",
+      "laneDropPlaceholderTag" : "",
+      "swimlaneHeaderTag" : "",
+      "swimlaneHeaderCloneTag" : "",
+      "swimlaneDraggable" : false,
+      "swimlaneDragPlaceholderTag" : "",
+      "swimlaneDropPlaceholderTag" : "",
+      "cardConfigOverride" : { },
+      "laneConfigOverride" : { },
+      "swimlaneConfigOverride" : { },
+      "useArrowNavigation" : true,
+      "arrowNavigableElements" : "",
+      "wrapperDomEvents" : [ ],
+      "styles" : "",
+      "loadTagsFromUxf" : false,
+      "customScrollOptions" : { }
+    }
+  }
+}, {
+  "name" : "boardDirtyState",
+  "label" : "boardDirtyState",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "sys_id" : "",
+      "cards" : [ ],
+      "lanes" : [ {
+        "value" : "",
+        "order" : 0,
+        "non_localized_name" : "To Do",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "f7ff977c73c820101e217152a7f6a74f",
+        "name" : "To Do",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "f7ff977c73c820101e217152a7f6a74f",
+        "title" : "To Do",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : {
+          "board_type" : "FREEFORM",
+          "is2DBoard" : false,
+          "lane_filter" : "",
+          "lane_count" : 3,
+          "total_lane_count" : 3,
+          "lane_field" : "__KANBAN__",
+          "swimlane_field" : "",
+          "table" : "vtb_task",
+          "highest_lane_order" : 2,
+          "can_add_task" : true
+        }
+      }, {
+        "value" : "",
+        "order" : 1,
+        "non_localized_name" : "Doing",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "3bff977c73c820101e217152a7f6a750",
+        "name" : "Doing",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "3bff977c73c820101e217152a7f6a750",
+        "title" : "Doing",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      }, {
+        "value" : "",
+        "order" : 2,
+        "non_localized_name" : "Done",
+        "board_id" : "ffff977c73c820101e217152a7f6a74b",
+        "lane_wip_limit" : -1,
+        "is_choice_lane" : false,
+        "is_reference_lane" : false,
+        "sys_id" : "37ff977c73c820101e217152a7f6a751",
+        "name" : "Done",
+        "can_delete" : true,
+        "read_only" : false,
+        "is_swim_lane" : false,
+        "primary_key_field" : "sys_id",
+        "id" : "37ff977c73c820101e217152a7f6a751",
+        "title" : "Done",
+        "cardsCount" : 0,
+        "_style_" : {
+          "sn-lane" : {
+            "width" : "285px",
+            "padding" : "3px",
+            "overflow-y" : "auto",
+            "height" : "calc(100% - 58px)"
+          },
+          "lane-footer-container" : {
+            "position" : "sticky",
+            "bottom" : "30px"
+          }
+        },
+        "options" : "[Circular]"
+      } ],
+      "swimlanes" : [ ],
+      "cardTag" : "sn-vtb-card",
+      "cardDraggable" : false,
+      "cardDragPlaceholderTag" : "",
+      "cardDropPlaceholderTag" : "",
+      "laneHeaderTag" : "",
+      "laneFooterTag" : "",
+      "laneDraggable" : false,
+      "laneDragPlaceholderTag" : "",
+      "laneDropPlaceholderTag" : "",
+      "swimlaneHeaderTag" : "",
+      "swimlaneHeaderCloneTag" : "",
+      "swimlaneDraggable" : false,
+      "swimlaneDragPlaceholderTag" : "",
+      "swimlaneDropPlaceholderTag" : "",
+      "cardConfigOverride" : { },
+      "laneConfigOverride" : { },
+      "swimlaneConfigOverride" : { },
+      "useArrowNavigation" : true,
+      "arrowNavigableElements" : "",
+      "wrapperDomEvents" : [ ],
+      "styles" : "",
+      "loadTagsFromUxf" : false,
+      "customScrollOptions" : { }
+    }
+  }
+}, {
+  "name" : "initialiseAMB",
+  "label" : "initialiseAMB",
+  "fieldType" : "boolean",
+  "valueType" : "boolean",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}, {
+  "name" : "modalData",
+  "label" : "modalData",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "headerLabel" : "",
+      "content" : "",
+      "primaryButtonLabel" : "",
+      "secondaryButtonLabel" : ""
+    }
+  }
+}, {
+  "name" : "modalId",
+  "label" : "modalId",
+  "fieldType" : "string",
+  "valueType" : "string",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "\"\""
+  }
+}, {
+  "name" : "cardForm",
+  "label" : "cardForm",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "recordId" : "",
+      "errorMessage" : "",
+      "isVisible" : false,
+      "query" : "",
+      "laneId" : "",
+      "swimlaneId" : "",
+      "position" : "",
+      "view" : "workspace"
+    }
+  }
+}, {
+  "name" : "cardDetails",
+  "label" : "cardDetails",
+  "fieldType" : "json",
+  "valueType" : "json",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : {
+      "table" : "",
+      "recordId" : "",
+      "view" : "",
+      "isVisible" : false
+    }
+  }
+} ]</state_properties>
+        <sys_class_name>sys_ux_macroponent</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-03-09 01:42:46</sys_created_on>
+        <sys_id>5a0e553e474e4150d384ee82e36d4334</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Visual Board Demo Page</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_macroponent_5a0e553e474e4150d384ee82e36d4334</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-03-09 01:42:49</sys_updated_on>
+    </sys_ux_macroponent>
+</record_update>

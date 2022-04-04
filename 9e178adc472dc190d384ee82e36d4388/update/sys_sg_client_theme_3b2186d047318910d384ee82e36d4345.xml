@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_client_theme">
+    <sys_sg_client_theme action="INSERT_OR_UPDATE">
+        <name>Elara Caring</name>
+        <palette>{"Brand":"#a862a7","Secondary":"#212b5c","Primary":"#d5b1d1","Destructive":"#0693e3"}</palette>
+        <sys_class_name>sys_sg_client_theme</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-16 23:37:29</sys_created_on>
+        <sys_id>3b2186d047318910d384ee82e36d4345</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Elara Caring</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_client_theme_3b2186d047318910d384ee82e36d4345</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-16 23:37:29</sys_updated_on>
+    </sys_sg_client_theme>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b2186d047318910d384ee82e36d4345"/>
+</record_update>

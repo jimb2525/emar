@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="INSERT_OR_UPDATE">
+        <name>text_01_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 00:27:05</sys_created_on>
+        <sys_id>96ec829447718910d384ee82e36d4386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_01_element</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_96ec829447718910d384ee82e36d4386</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 00:27:05</sys_updated_on>
+        <view_config display_value="My Patients Card">1e68c2dc47318910d384ee82e36d43bc</view_config>
+        <view_template_slot display_value="text_01">177205bc41e35010f877183fc9b8bedd</view_template_slot>
+    </sys_sg_view_config_element>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_screen_field">
+    <sys_sg_screen_field action="INSERT_OR_UPDATE">
+        <data_item_field_name>attachment_list</data_item_field_name>
+        <field_name>attachment_list</field_name>
+        <hidden>false</hidden>
+        <order>900</order>
+        <record_id_field>sys_id</record_id_field>
+        <screen display_value="Details">2acb121c47b18910d384ee82e36d4339</screen>
+        <screen_data_item_table>x_snc_elara_data_0_patient</screen_data_item_table>
+        <sys_class_name>sys_sg_screen_field</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 05:55:26</sys_created_on>
+        <sys_id>1c18171047398910d384ee82e36d439c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>attachment_list</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_screen_field_1c18171047398910d384ee82e36d439c</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-03-10 20:25:49</sys_updated_on>
+        <type>attachments_list</type>
+        <value_only>false</value_only>
+    </sys_sg_screen_field>
+</record_update>
