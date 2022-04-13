@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>40cacc1347a60910d0ece731e36d4305</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_electronic_0_medication">
+    <x_snc_electronic_0_medication action="INSERT_OR_UPDATE">
+        <dosage/>
+        <end_date/>
+        <frequency/>
+        <medication_product display_value="Olanzapine">1a500a54472dc190d384ee82e36d43eb</medication_product>
+        <number>MED0001071</number>
+        <patient/>
+        <route/>
+        <start_date/>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-04-04 05:27:16</sys_created_on>
+        <sys_id>40cacc1347a60910d0ece731e36d4305</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-04-04 05:42:09</sys_updated_on>
+    </x_snc_electronic_0_medication>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-04-13 01:46:11</sys_created_on>
+        <sys_id>d57e61ca47b64950d384ee82e36d4339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Olanzapine</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_metadata_link_d57e61ca47b64950d384ee82e36d4339</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-04-13 01:46:11</sys_updated_on>
+        <tablename>x_snc_electronic_0_medication</tablename>
+    </sys_metadata_link>
+</record_update>

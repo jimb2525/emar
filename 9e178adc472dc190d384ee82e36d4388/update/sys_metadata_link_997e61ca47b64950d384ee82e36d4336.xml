@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>246b4e54476dc190d384ee82e36d431a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_electronic_0_medication">
+    <x_snc_electronic_0_medication action="INSERT_OR_UPDATE">
+        <dosage>10</dosage>
+        <end_date>2022-03-07</end_date>
+        <frequency>times_daily</frequency>
+        <medication_product display_value="Olanzapine">1a500a54472dc190d384ee82e36d43eb</medication_product>
+        <number>MED0001003</number>
+        <patient/>
+        <route>oral</route>
+        <start_date>2022-01-05</start_date>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-04 14:05:04</sys_created_on>
+        <sys_id>246b4e54476dc190d384ee82e36d431a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-04-04 05:40:52</sys_updated_on>
+    </x_snc_electronic_0_medication>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-04-13 01:46:11</sys_created_on>
+        <sys_id>997e61ca47b64950d384ee82e36d4336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Olanzapine</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_metadata_link_997e61ca47b64950d384ee82e36d4336</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-04-13 01:46:11</sys_updated_on>
+        <tablename>x_snc_electronic_0_medication</tablename>
+    </sys_metadata_link>
+</record_update>
