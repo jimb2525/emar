@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="DELETE">
+        <active>true</active>
+        <button display_value="Add Medication">ba3cae69476e4950d0ece731e36d43e3</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name>medication</field_name>
+        <icon/>
+        <label/>
+        <location>field</location>
+        <name/>
+        <order>10</order>
+        <parent>fce2355147a20950d0ece731e36d43ee</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 06:46:34</sys_created_on>
+        <sys_id>01fc66e9476e4950d0ece731e36d4363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_button_instance_01fc66e9476e4950d0ece731e36d4363</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 06:46:34</sys_updated_on>
+        <table>x_snc_electronic_0_mar_calendar</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="DELETE" query="documentkey=01fc66e9476e4950d0ece731e36d4363"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_button_instance_01fc66e9476e4950d0ece731e36d4363</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance"><sys_sg_button_instance action="INSERT_OR_UPDATE"><active>true</active><button display_value="Add Medication">ba3cae69476e4950d0ece731e36d43e3</button><color_theme>primary</color_theme><description/><field_name>medication</field_name><icon/><label/><location>field</location><name/><order>10</order><parent>fce2355147a20950d0ece731e36d43ee</parent><parent_table>sys_sg_screen</parent_table><sys_class_name>sys_sg_button_instance</sys_class_name><sys_created_by>mike.cornell</sys_created_by><sys_created_on>2022-03-30 06:46:34</sys_created_on><sys_id>01fc66e9476e4950d0ece731e36d4363</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_button_instance_01fc66e9476e4950d0ece731e36d4363</sys_update_name><sys_updated_by>mike.cornell</sys_updated_by><sys_updated_on>2022-03-30 06:46:34</sys_updated_on><table>x_snc_electronic_0_mar_calendar</table></sys_sg_button_instance><sys_translated_text action="delete_multiple" query="documentkey=01fc66e9476e4950d0ece731e36d4363"/></record_update>]]></payload>
+        <payload_hash>-774774448</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 06:46:34</sys_created_on>
+        <sys_id>89fc2ae9476e4950d0ece731e36d4382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fd99376940000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 06:46:34</sys_updated_on>
+        <type>Function instance</type>
+        <update_guid>81fc2ae9026e495097559bfac8393d82</update_guid>
+        <update_guid_history>81fc2ae9026e495097559bfac8393d82:-774774448</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 08:08:56</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_button_instance">sys_sg_button_instance</sys_db_object>
+        <sys_id>67e9fbbc39e940949b5eedf94c53fd49</sys_id>
+        <sys_metadata>01fc66e9476e4950d0ece731e36d4363</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_button_instance_01fc66e9476e4950d0ece731e36d4363</sys_update_name>
+        <sys_update_version display_value="sys_sg_button_instance_01fc66e9476e4950d0ece731e36d4363">89fc2ae9476e4950d0ece731e36d4382</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 08:08:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

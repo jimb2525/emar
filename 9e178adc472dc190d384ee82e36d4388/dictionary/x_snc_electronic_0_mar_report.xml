@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="MAR Report" max_length="40" name="x_snc_electronic_0_mar_report" sizeclass="2" type="collection">
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Medication Administration" max_length="32" name="medication_administration" reference="x_snc_electronic_0_medication_administration" type="reference"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_elara_data_0_patient" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+    </element>
+</database>

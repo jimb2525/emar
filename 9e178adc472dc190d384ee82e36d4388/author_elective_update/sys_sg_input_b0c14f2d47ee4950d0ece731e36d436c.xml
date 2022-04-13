@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input">
+    <sys_sg_input action="DELETE">
+        <active>true</active>
+        <autofill_variable/>
+        <category/>
+        <description/>
+        <label>Test</label>
+        <mandatory>false</mandatory>
+        <name>test</name>
+        <order/>
+        <page/>
+        <parameter_screen display_value="Medication Input Screen">da71432d47ee4950d0ece731e36d4393</parameter_screen>
+        <parameter_section/>
+        <placeholder/>
+        <readonly>false</readonly>
+        <sys_class_name>sys_sg_input</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 08:17:37</sys_created_on>
+        <sys_id>b0c14f2d47ee4950d0ece731e36d436c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_input_b0c14f2d47ee4950d0ece731e36d436c</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 08:42:20</sys_updated_on>
+        <type display_value="String">7debec1517021010f2b43b9fadb959e3</type>
+    </sys_sg_input>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_input_b0c14f2d47ee4950d0ece731e36d436c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_input"><sys_sg_input action="INSERT_OR_UPDATE"><active>true</active><autofill_variable/><category/><description/><label>Test</label><mandatory>false</mandatory><name>test</name><order/><page/><parameter_screen display_value="Medication Input Screen">da71432d47ee4950d0ece731e36d4393</parameter_screen><parameter_section/><placeholder/><readonly>false</readonly><sys_class_name>sys_sg_input</sys_class_name><sys_created_by>mike.cornell</sys_created_by><sys_created_on>2022-03-30 08:17:37</sys_created_on><sys_id>b0c14f2d47ee4950d0ece731e36d436c</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Test</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_input_b0c14f2d47ee4950d0ece731e36d436c</sys_update_name><sys_updated_by>mike.cornell</sys_updated_by><sys_updated_on>2022-03-30 08:42:20</sys_updated_on><type display_value="String">7debec1517021010f2b43b9fadb959e3</type></sys_sg_input></record_update>]]></payload>
+        <payload_hash>1799770497</payload_hash>
+        <record_name>Test</record_name>
+        <reverted_from/>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 08:42:20</sys_created_on>
+        <sys_id>7c7707a547228950d0ece731e36d4309</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fd9fd74650000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 08:42:20</sys_updated_on>
+        <type>Input</type>
+        <update_guid>347707a5c62289504ae44c88ec441109</update_guid>
+        <update_guid_history>347707a5c62289504ae44c88ec441109:1799770497,bf238fad3bee49506d8b71acd24bf972:6144235,d132cf2de3ee49501b4dcbac7c9c9d27:1894895915,f6c14f2de0ee495064393f5013070ac7:683477603</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 09:13:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_input">sys_sg_input</sys_db_object>
+        <sys_id>bdea87d208ca4e0fa5feeb1f20a9a7e1</sys_id>
+        <sys_metadata>b0c14f2d47ee4950d0ece731e36d436c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_input_b0c14f2d47ee4950d0ece731e36d436c</sys_update_name>
+        <sys_update_version display_value="sys_sg_input_b0c14f2d47ee4950d0ece731e36d436c">7c7707a547228950d0ece731e36d4309</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 09:13:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

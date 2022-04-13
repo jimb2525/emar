@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="MAR Calendar" max_length="40" name="x_snc_electronic_0_mar_calendar" sizeclass="4" type="collection">
+        <element label="Administering Nurse" max_length="32" name="administering_nurse" reference="sys_user" type="reference"/>
+        <element label="Calendar Data" max_length="4000" name="calendar_data" type="json"/>
+        <element label="Calendar View" max_length="8000" name="calendar_view" type="html"/>
+        <element label="Additional comments" max_length="4000" name="comments" type="journal_input"/>
+        <element label="Comments and Work notes" max_length="4000" name="comments_and_work_notes" type="journal_list"/>
+        <element label="Date Administered" max_length="40" name="date_administered" type="glide_date"/>
+        <element label="Hour Administered" max_length="40" name="hour_administered" type="integer"/>
+        <element label="Medication" max_length="32" name="medication" reference="x_snc_electronic_0_medication" type="reference"/>
+        <element label="Notes" max_length="4000" name="notes" type="string"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_elara_data_0_patient" type="reference"/>
+        <element default="cbfbe2b847ea4550d0ece731e36d4340" label="Task Document Template" max_length="32" name="task_document_template" reference="u_task_document_template" type="reference"/>
+        <element label="Time Administered" max_length="40" name="time_administered" type="glide_date_time"/>
+        <element label="Was Missed" max_length="40" name="was_missed" type="boolean"/>
+        <element label="Was Refused" max_length="40" name="was_refused" type="boolean"/>
+        <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
+        <index name="index">
+            <element name="task_document_template"/>
+        </index>
+        <index name="index2">
+            <element name="patient"/>
+        </index>
+        <index name="index3">
+            <element name="administering_nurse"/>
+        </index>
+        <index name="index4">
+            <element name="medication"/>
+        </index>
+    </element>
+</database>

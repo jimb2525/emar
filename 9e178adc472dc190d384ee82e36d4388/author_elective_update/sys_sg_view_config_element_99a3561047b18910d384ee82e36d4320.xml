@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element">
+    <sys_sg_view_config_element action="DELETE">
+        <name>text_03_element</name>
+        <sys_class_name>sys_sg_view_config_element</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 00:56:29</sys_created_on>
+        <sys_id>99a3561047b18910d384ee82e36d4320</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_03_element</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_view_config_element_99a3561047b18910d384ee82e36d4320</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 00:56:29</sys_updated_on>
+        <view_config display_value="Patient Medications Record Screen Card">01b09ed847718910d384ee82e36d43f9</view_config>
+        <view_template_slot display_value="text_03">ef5ef07841e35010f877183fc9b8be34</view_template_slot>
+    </sys_sg_view_config_element>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_view_config_element_99a3561047b18910d384ee82e36d4320</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_view_config_element"><sys_sg_view_config_element action="INSERT_OR_UPDATE"><name>text_03_element</name><sys_class_name>sys_sg_view_config_element</sys_class_name><sys_created_by>workflow.factory</sys_created_by><sys_created_on>2022-02-17 00:56:29</sys_created_on><sys_id>99a3561047b18910d384ee82e36d4320</sys_id><sys_mod_count>0</sys_mod_count><sys_name>text_03_element</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_view_config_element_99a3561047b18910d384ee82e36d4320</sys_update_name><sys_updated_by>workflow.factory</sys_updated_by><sys_updated_on>2022-02-17 00:56:29</sys_updated_on><view_config display_value="Patient Medications Record Screen Card">01b09ed847718910d384ee82e36d43f9</view_config><view_template_slot display_value="text_03">ef5ef07841e35010f877183fc9b8be34</view_template_slot></sys_sg_view_config_element></record_update>]]></payload>
+        <payload_hash>-2039303239</payload_hash>
+        <record_name>text_03_element</record_name>
+        <reverted_from/>
+        <source>9a178adc472dc190d384ee82e36d438b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 00:56:29</sys_created_on>
+        <sys_id>d9a3561047b18910d384ee82e36d4322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f052e39b40000001</sys_recorded_at>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 00:56:29</sys_updated_on>
+        <type>Card element</type>
+        <update_guid>d1a3561011b189100e9089fb62374e22</update_guid>
+        <update_guid_history>d1a3561011b189100e9089fb62374e22:-2039303239</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 05:52:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_view_config_element">sys_sg_view_config_element</sys_db_object>
+        <sys_id>719e4b959247478880cda32f72d0f040</sys_id>
+        <sys_metadata>99a3561047b18910d384ee82e36d4320</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>text_03_element</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_view_config_element_99a3561047b18910d384ee82e36d4320</sys_update_name>
+        <sys_update_version display_value="sys_sg_view_config_element_99a3561047b18910d384ee82e36d4320">d9a3561047b18910d384ee82e36d4322</sys_update_version>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 05:52:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

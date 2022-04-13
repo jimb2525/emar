@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_parameter">
+    <sys_sg_ui_parameter action="DELETE">
+        <button display_value="New Medication (eMAR)">887132e147ae4950d0ece731e36d4356</button>
+        <button_parent_table/>
+        <carried>true</carried>
+        <constant/>
+        <default_value/>
+        <default_value_type>none</default_value_type>
+        <field_name/>
+        <input_source>user</input_source>
+        <input_style>inline</input_style>
+        <input_type>text</input_type>
+        <mandatory>false</mandatory>
+        <max_entries/>
+        <multi_entry>false</multi_entry>
+        <multi_select>false</multi_select>
+        <name>medication</name>
+        <order/>
+        <parameter_type>button</parameter_type>
+        <placeholder/>
+        <screen/>
+        <search_type>starts_with</search_type>
+        <source_field/>
+        <sys_class_name>sys_sg_ui_parameter</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 07:15:06</sys_created_on>
+        <sys_id>7b53b6e547ae4950d0ece731e36d4321</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>medication</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 07:30:08</sys_updated_on>
+        <table_name/>
+        <virtual_field_value>false</virtual_field_value>
+    </sys_sg_ui_parameter>
+    <sys_translated_text action="DELETE" query="documentkey=7b53b6e547ae4950d0ece731e36d4321"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_ui_parameter"><sys_sg_ui_parameter action="INSERT_OR_UPDATE"><button display_value="New Medication (eMAR)">887132e147ae4950d0ece731e36d4356</button><button_parent_table/><carried>true</carried><constant/><default_value/><default_value_type>none</default_value_type><field_name/><input_source>user</input_source><input_style>inline</input_style><input_type>text</input_type><mandatory>false</mandatory><max_entries/><multi_entry>false</multi_entry><multi_select>false</multi_select><name>medication</name><order/><parameter_type>button</parameter_type><placeholder/><screen/><search_type>starts_with</search_type><source_field/><sys_class_name>sys_sg_ui_parameter</sys_class_name><sys_created_by>mike.cornell</sys_created_by><sys_created_on>2022-03-30 07:15:06</sys_created_on><sys_id>7b53b6e547ae4950d0ece731e36d4321</sys_id><sys_mod_count>7</sys_mod_count><sys_name>medication</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321</sys_update_name><sys_updated_by>mike.cornell</sys_updated_by><sys_updated_on>2022-03-30 07:30:08</sys_updated_on><table_name/><virtual_field_value>false</virtual_field_value></sys_sg_ui_parameter><sys_translated_text action="delete_multiple" query="documentkey=7b53b6e547ae4950d0ece731e36d4321"/></record_update>]]></payload>
+        <payload_hash>-1166960508</payload_hash>
+        <record_name>medication</record_name>
+        <reverted_from display_value="sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321">43e6bee947ae4950d0ece731e36d43ce</reverted_from>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 10:17:18</sys_created_on>
+        <sys_id>0c3d932947a28950d0ece731e36d43fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fda54665d0000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 10:17:18</sys_updated_on>
+        <type>UI parameter</type>
+        <update_guid>b32d9329f7a28950346de1e29d4018f6</update_guid>
+        <update_guid_history>b32d9329f7a28950346de1e29d4018f6:-1166960508,9de8d76172a289508ce3ed4406a478d9:1815193827,0be6bee987ae4950b3c96389b5edc9cd:-1166960508,6de6ba2df9ae4950b3107b346bd84b40:1035205319,d9e5b6e9bbae49506335ba90ee388d68:-469060848,d96536a950ae49503160d7f063d188b7:1889973014,c3f3fa298fae4950a31d2aa0a8731d37:-809821870,90f33ee566ae4950b9c977bf1b490362:-545581390,4b737ae545ae4950ab29d072e48db1c5:-1422422999</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 17:07:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_ui_parameter">sys_sg_ui_parameter</sys_db_object>
+        <sys_id>0bbe32a49ef24db88187b7be0edad040</sys_id>
+        <sys_metadata>7b53b6e547ae4950d0ece731e36d4321</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>medication</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321</sys_update_name>
+        <sys_update_version display_value="sys_sg_ui_parameter_7b53b6e547ae4950d0ece731e36d4321">0c3d932947a28950d0ece731e36d43fa</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 17:07:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

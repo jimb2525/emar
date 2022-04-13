@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Electronic Medication Administration Record Workspace Config">90c74250756dc190a6bc6990e009272b</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="MAR Page">d9528f6547a1c990d384ee82e36d4380</macroponent>
+        <macroponent_config>{
+  "sysId" : "",
+  "table" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config>
+        <name>MAR Page default</name>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <screen_condition/>
+        <screen_type display_value="MAR Page">51524fa147a1c990d384ee82e36d432c</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-08 15:17:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91528f6547a1c990d384ee82e36d4384</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>MAR Page default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_ux_screen_91528f6547a1c990d384ee82e36d4384</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-08 15:21:37</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=91528f6547a1c990d384ee82e36d4384"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_ux_screen_91528f6547a1c990d384ee82e36d4384</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Electronic Medication Administration Record Workspace Config">90c74250756dc190a6bc6990e009272b</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="MAR Page">d9528f6547a1c990d384ee82e36d4380</macroponent><macroponent_config>{
+  "sysId" : "",
+  "table" : "",
+  "label" : "",
+  "bare" : true,
+  "scrollable" : "y",
+  "headerLevel" : "1",
+  "interceptNotifications" : false,
+  "propagateNotifications" : false
+}</macroponent_config><name>MAR Page default</name><order>0</order><parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><screen_condition/><screen_type display_value="MAR Page">51524fa147a1c990d384ee82e36d432c</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2022-02-08 15:17:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>91528f6547a1c990d384ee82e36d4384</sys_id><sys_mod_count>3</sys_mod_count><sys_name>MAR Page default</sys_name><sys_overrides/><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_ux_screen_91528f6547a1c990d384ee82e36d4384</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2022-02-08 15:21:37</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=91528f6547a1c990d384ee82e36d4384"/></record_update>]]></payload>
+        <payload_hash>2081242585</payload_hash>
+        <record_name>MAR Page default</record_name>
+        <reverted_from/>
+        <source>9a178adc472dc190d384ee82e36d438b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-08 15:21:37</sys_created_on>
+        <sys_id>1253c7e547a1c990d384ee82e36d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ed9ed0a6a0000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-08 15:21:37</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>d653c7e551a1c9905b19b237f42e503e</update_guid>
+        <update_guid_history>d653c7e551a1c9905b19b237f42e503e:2081242585,197283a5d7a1c99021b5b91ff1794d85:-911232939,4a6203a5f2a1c99045d3ec1abac8b7d3:1630521581,d9528f65d7a1c990d90962f18e6ab186:292869667</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-08 15:33:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>14c71e2e5f6d4ab0840cdc8f3b41da41</sys_id>
+        <sys_metadata>91528f6547a1c990d384ee82e36d4384</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MAR Page default</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_91528f6547a1c990d384ee82e36d4384</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_91528f6547a1c990d384ee82e36d4384">1253c7e547a1c990d384ee82e36d433f</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-08 15:33:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

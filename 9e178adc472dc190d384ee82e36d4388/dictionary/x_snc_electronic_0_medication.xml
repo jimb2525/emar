@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Medication" max_length="40" name="x_snc_electronic_0_medication" sizeclass="3" type="collection">
+        <element label="Dosage" max_length="40" name="dosage" type="float"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element choice="1" label="Frequency" max_length="40" name="frequency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 Times Daily" sequence="10" value="times_daily"/>
+                <element inactive_on_update="false" label="Every PM" sequence="20" value="every_pm"/>
+                <element inactive_on_update="false" label="Every AM" sequence="30" value="every_am"/>
+            </choice>
+        </element>
+        <element display="true" label="Medication Product" max_length="32" name="medication_product" reference="x_snc_elara_data_0_medication_product_model" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_elara_data_0_patient" type="reference"/>
+        <element choice="3" label="Route" max_length="40" name="route" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Oral" sequence="10" value="oral"/>
+                <element inactive_on_update="false" label="Intravenous" sequence="20" value="intravenous"/>
+            </choice>
+        </element>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <index name="index">
+            <element name="medication_product"/>
+        </index>
+        <index name="index2">
+            <element name="patient"/>
+        </index>
+    </element>
+</database>

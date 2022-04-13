@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>administering_nurse</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Alert Msg</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	alert('test');
+	g_form.setValue("calendar_view", "test");
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 03:42:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d4c24ee9476a4950d0ece731e36d43c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Alert Msg</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_script_client_d4c24ee9476a4950d0ece731e36d43c5</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 03:45:07</sys_updated_on>
+        <table>x_snc_electronic_0_mar_calendar</table>
+        <type>onLoad</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_script_client_d4c24ee9476a4950d0ece731e36d43c5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;administering_nurse&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Alert Msg&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+	alert('test');
+	g_form.setValue("calendar_view", "test");
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;mike.cornell&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-03-30 03:42:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d4c24ee9476a4950d0ece731e36d43c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Alert Msg&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0"&gt;9e178adc472dc190d384ee82e36d4388&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Electronic Medication Administration Record"&gt;9e178adc472dc190d384ee82e36d4388&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_d4c24ee9476a4950d0ece731e36d43c5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;mike.cornell&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-03-30 03:45:07&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_electronic_0_mar_calendar&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;1&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>424983657</payload_hash>
+        <record_name>Alert Msg</record_name>
+        <reverted_from/>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 03:45:07</sys_created_on>
+        <sys_id>0363ca6d476a4950d0ece731e36d43fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fd8ed57d90000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 03:45:07</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>c763ca6da56a49505f6a5c97eb5847fc</update_guid>
+        <update_guid_history>c763ca6da56a49505f6a5c97eb5847fc:424983657,7463c2ad0d6a495038002cf4f2a2934d:842768862,3423ca6d796a4950ddae9db6308acc30:371237430,ded2026d166a49506db872c2ac445fb4:1895676244</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 03:47:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>16f182bdd3424266845cbb06a8931919</sys_id>
+        <sys_metadata>d4c24ee9476a4950d0ece731e36d43c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alert Msg</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent display_value="MAR Calendar">ce39e63447ea4550d0ece731e36d435a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_script_client_d4c24ee9476a4950d0ece731e36d43c5</sys_update_name>
+        <sys_update_version display_value="sys_script_client_d4c24ee9476a4950d0ece731e36d43c5">0363ca6d476a4950d0ece731e36d43fd</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 03:47:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
     <sys_push_notif_app_install action="INSERT_OR_UPDATE">
         <active>true</active>
-        <last_registered_on>2022-03-31 14:39:53</last_registered_on>
+        <last_registered_on>2022-04-04 05:41:24</last_registered_on>
         <sys_class_name>sys_push_notif_app_install</sys_class_name>
         <sys_created_by>mike.cornell</sys_created_by>
         <sys_created_on>2022-03-18 01:30:15</sys_created_on>
         <sys_id>5e71ffad479a0510d0ece731e36d43b5</sys_id>
-        <sys_mod_count>136</sys_mod_count>
+        <sys_mod_count>177</sys_mod_count>
         <sys_name>cKwsiuc-TkaLeVuSNLAldX:APA91bHSk25paoHUkwOt07Qd230Hfhmmy0e9LHPmr5hEfUrBAZP3NKKVKMkNahbvDal0VU2nxU1gBQQrY9SUbi_yHRlt5rINIAR0n02SU3EmgXgEHq07LCaZXC0xL0oQaiHq72dhQF_d</sys_name>
         <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
         <sys_policy/>
@@ -15,7 +15,7 @@
         <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
         <sys_update_name>sys_push_notif_app_install_5e71ffad479a0510d0ece731e36d43b5</sys_update_name>
         <sys_updated_by>mike.cornell</sys_updated_by>
-        <sys_updated_on>2022-03-31 14:39:53</sys_updated_on>
+        <sys_updated_on>2022-04-04 05:41:24</sys_updated_on>
         <sys_user_id display_value="Mike Cornell">6708e7e5479e0510d384ee82e36d438c</sys_user_id>
         <token>cKwsiuc-TkaLeVuSNLAldX:APA91bHSk25paoHUkwOt07Qd230Hfhmmy0e9LHPmr5hEfUrBAZP3NKKVKMkNahbvDal0VU2nxU1gBQQrY9SUbi_yHRlt5rINIAR0n02SU3EmgXgEHq07LCaZXC0xL0oQaiHq72dhQF_d</token>
     </sys_push_notif_app_install>

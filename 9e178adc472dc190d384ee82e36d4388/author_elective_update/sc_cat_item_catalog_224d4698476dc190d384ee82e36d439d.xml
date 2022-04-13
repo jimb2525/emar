@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Administer Medication">ebdb0218476dc190d384ee82e36d4354</sc_cat_item>
+        <sc_catalog display_value="Healthcare">5a0c4618476dc190d384ee82e36d430d</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-04 14:13:02</sys_created_on>
+        <sys_id>224d4698476dc190d384ee82e36d439d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare.Administer Medication</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_224d4698476dc190d384ee82e36d439d</sys_update_name>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-04 14:13:02</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sc_cat_item_catalog_224d4698476dc190d384ee82e36d439d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Administer Medication">ebdb0218476dc190d384ee82e36d4354</sc_cat_item><sc_catalog display_value="Healthcare">5a0c4618476dc190d384ee82e36d430d</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>james.belote</sys_created_by><sys_created_on>2022-02-04 14:13:02</sys_created_on><sys_id>224d4698476dc190d384ee82e36d439d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Healthcare.Administer Medication</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sc_cat_item_catalog_224d4698476dc190d384ee82e36d439d</sys_update_name><sys_updated_by>james.belote</sys_updated_by><sys_updated_on>2022-02-04 14:13:02</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>362619008</payload_hash>
+        <record_name>Healthcare.Administer Medication</record_name>
+        <reverted_from/>
+        <source>9a178adc472dc190d384ee82e36d438b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-04 14:13:02</sys_created_on>
+        <sys_id>6a4d4698476dc190d384ee82e36d43a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ec514cf3d0000001</sys_recorded_at>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-04 14:13:02</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>ae4d4698616dc190e6b1ed293f262ba2</update_guid>
+        <update_guid_history>ae4d4698616dc190e6b1ed293f262ba2:362619008</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Healthcare.Administer Medication">357d8a98476dc190d384ee82e36d4321</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>james.belote</sys_created_by>
+        <sys_created_on>2022-02-04 14:13:48</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>06c5f6d26d3b4cf891f2540841449040</sys_id>
+        <sys_metadata>224d4698476dc190d384ee82e36d439d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Healthcare.Administer Medication</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent display_value="Administer Medication">ebdb0218476dc190d384ee82e36d4354</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_224d4698476dc190d384ee82e36d439d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_224d4698476dc190d384ee82e36d439d">6a4d4698476dc190d384ee82e36d43a3</sys_update_version>
+        <sys_updated_by>james.belote</sys_updated_by>
+        <sys_updated_on>2022-02-04 14:13:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

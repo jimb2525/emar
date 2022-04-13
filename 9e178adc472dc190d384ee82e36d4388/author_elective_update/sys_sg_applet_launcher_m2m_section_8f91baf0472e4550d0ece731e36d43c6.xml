@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section">
+    <sys_sg_applet_launcher_m2m_section action="DELETE">
+        <applet_launcher display_value="Medication Administration">c791baf0472e4550d0ece731e36d43c1</applet_launcher>
+        <order>2147483647</order>
+        <section display_value="Quick Links">cb91baf0472e4550d0ece731e36d43c4</section>
+        <sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-27 23:11:29</sys_created_on>
+        <sys_id>8f91baf0472e4550d0ece731e36d43c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_8f91baf0472e4550d0ece731e36d43c6</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-27 23:11:29</sys_updated_on>
+    </sys_sg_applet_launcher_m2m_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_applet_launcher_m2m_section_8f91baf0472e4550d0ece731e36d43c6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_applet_launcher_m2m_section"><sys_sg_applet_launcher_m2m_section action="INSERT_OR_UPDATE"><applet_launcher display_value="Medication Administration">c791baf0472e4550d0ece731e36d43c1</applet_launcher><order>2147483647</order><section display_value="Quick Links">cb91baf0472e4550d0ece731e36d43c4</section><sys_class_name>sys_sg_applet_launcher_m2m_section</sys_class_name><sys_created_by>mike.cornell</sys_created_by><sys_created_on>2022-03-27 23:11:29</sys_created_on><sys_id>8f91baf0472e4550d0ece731e36d43c6</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_applet_launcher_m2m_section_8f91baf0472e4550d0ece731e36d43c6</sys_update_name><sys_updated_by>mike.cornell</sys_updated_by><sys_updated_on>2022-03-27 23:11:29</sys_updated_on></sys_sg_applet_launcher_m2m_section></record_update>]]></payload>
+        <payload_hash>-1488911972</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-27 23:11:29</sys_created_on>
+        <sys_id>4f91baf0472e4550d0ece731e36d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fcda619250000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-27 23:11:29</sys_updated_on>
+        <type>Launcher section mapping</type>
+        <update_guid>c791baf0912e4550e2ff3c04b78847c8</update_guid>
+        <update_guid_history>c791baf0912e4550e2ff3c04b78847c8:-1488911972</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-27 23:11:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_applet_launcher_m2m_section">sys_sg_applet_launcher_m2m_section</sys_db_object>
+        <sys_id>5a5c3fc49f854c7d8aa365f71855bb19</sys_id>
+        <sys_metadata>8f91baf0472e4550d0ece731e36d43c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_applet_launcher_m2m_section_8f91baf0472e4550d0ece731e36d43c6</sys_update_name>
+        <sys_update_version display_value="sys_sg_applet_launcher_m2m_section_8f91baf0472e4550d0ece731e36d43c6">4f91baf0472e4550d0ece731e36d43c8</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-27 23:11:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

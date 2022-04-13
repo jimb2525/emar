@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="DELETE">
+        <active>true</active>
+        <button display_value="Medication Administration AL">c481ff9847b98910d384ee82e36d43ec</button>
+        <color_theme>destructive</color_theme>
+        <description/>
+        <field_name/>
+        <icon/>
+        <label>testing</label>
+        <location>footer</location>
+        <name>testing</name>
+        <order>30</order>
+        <parent>a5bca3d047b98910d384ee82e36d4366</parent>
+        <parent_table>sys_sg_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 17:23:35</sys_created_on>
+        <sys_id>ac9575a847b5c910d384ee82e36d4301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>testing</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_button_instance_ac9575a847b5c910d384ee82e36d4301</sys_update_name>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 17:23:35</sys_updated_on>
+        <table>x_snc_electronic_0_medication</table>
+    </sys_sg_button_instance>
+    <sys_translated_text action="DELETE" query="documentkey=ac9575a847b5c910d384ee82e36d4301"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_button_instance_ac9575a847b5c910d384ee82e36d4301</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance"><sys_sg_button_instance action="INSERT_OR_UPDATE"><active>true</active><button display_value="Medication Administration AL">c481ff9847b98910d384ee82e36d43ec</button><color_theme>destructive</color_theme><description/><field_name/><icon/><label>testing</label><location>footer</location><name>testing</name><order>30</order><parent>a5bca3d047b98910d384ee82e36d4366</parent><parent_table>sys_sg_screen</parent_table><sys_class_name>sys_sg_button_instance</sys_class_name><sys_created_by>workflow.factory</sys_created_by><sys_created_on>2022-02-17 17:23:35</sys_created_on><sys_id>ac9575a847b5c910d384ee82e36d4301</sys_id><sys_mod_count>0</sys_mod_count><sys_name>testing</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_button_instance_ac9575a847b5c910d384ee82e36d4301</sys_update_name><sys_updated_by>workflow.factory</sys_updated_by><sys_updated_on>2022-02-17 17:23:35</sys_updated_on><table>x_snc_electronic_0_medication</table></sys_sg_button_instance><sys_translated_text action="delete_multiple" query="documentkey=ac9575a847b5c910d384ee82e36d4301"/></record_update>]]></payload>
+        <payload_hash>860868386</payload_hash>
+        <record_name>testing</record_name>
+        <reverted_from/>
+        <source>9a178adc472dc190d384ee82e36d438b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 17:23:35</sys_created_on>
+        <sys_id>e49575a847b5c910d384ee82e36d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17f08b5eecc0000001</sys_recorded_at>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 17:23:35</sys_updated_on>
+        <type>Function instance</type>
+        <update_guid>ec9575a8b5b5c9106163d0d902b32004</update_guid>
+        <update_guid_history>ec9575a8b5b5c9106163d0d902b32004:860868386</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>workflow.factory</sys_created_by>
+        <sys_created_on>2022-02-17 17:36:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_button_instance">sys_sg_button_instance</sys_db_object>
+        <sys_id>191c9aead3f14fca9093d47ea6c84749</sys_id>
+        <sys_metadata>ac9575a847b5c910d384ee82e36d4301</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>testing</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_button_instance_ac9575a847b5c910d384ee82e36d4301</sys_update_name>
+        <sys_update_version display_value="sys_sg_button_instance_ac9575a847b5c910d384ee82e36d4301">e49575a847b5c910d384ee82e36d4305</sys_update_version>
+        <sys_updated_by>workflow.factory</sys_updated_by>
+        <sys_updated_on>2022-02-17 17:36:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

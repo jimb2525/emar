@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="Medication Administration" max_length="40" name="x_snc_electronic_0_medication_administration" sizeclass="17" type="collection">
+        <element label="Administering Nurse" max_length="32" name="administering_nurse" reference="x_snc_elara_data_0_nurse" type="reference"/>
+        <element label="MAR Report" max_length="32" name="mar_report" reference="x_snc_electronic_0_mar_report" type="reference"/>
+        <element label="Medication" max_length="32" name="medication" reference="x_snc_electronic_0_medication" type="reference"/>
+        <element label="Missed Medication?" max_length="40" name="missed_medication" type="boolean"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_snc_elara_data_0_patient" type="reference"/>
+        <element audit="true" label="Refused?" max_length="40" name="refused" type="boolean"/>
+        <element label="Time Administered" max_length="40" name="time_administered" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Activity" section_id="eee6062547aa4950d0ece731e36d439b" sys_domain="global" table="x_snc_electronic_0_mar_calendar" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>work_notes</element>
+            <element>comments</element>
             <position>0</position>
             <sys_created_by>mike.cornell</sys_created_by>
-            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
-            <sys_id>2ae6462547aa4950d0ece731e36d434b</sys_id>
+            <sys_created_on>2022-04-04 04:44:27</sys_created_on>
+            <sys_id>cdf0c49347660910d0ece731e36d4322</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
             <sys_updated_by>mike.cornell</sys_updated_by>
-            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_updated_on>2022-04-04 04:44:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comments</element>
+            <element>work_notes</element>
             <position>1</position>
             <sys_created_by>mike.cornell</sys_created_by>
-            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
-            <sys_id>aee6462547aa4950d0ece731e36d434b</sys_id>
+            <sys_created_on>2022-04-04 04:44:27</sys_created_on>
+            <sys_id>85f0c49347660910d0ece731e36d4323</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
             <sys_updated_by>mike.cornell</sys_updated_by>
-            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_updated_on>2022-04-04 04:44:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>comments_and_work_notes</element>
             <position>2</position>
             <sys_created_by>mike.cornell</sys_created_by>
-            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
-            <sys_id>26e6462547aa4950d0ece731e36d434c</sys_id>
+            <sys_created_on>2022-04-04 04:44:27</sys_created_on>
+            <sys_id>09f0c49347660910d0ece731e36d4323</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
             <sys_updated_by>mike.cornell</sys_updated_by>
-            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_updated_on>2022-04-04 04:44:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>activity.xml</element>
             <position>3</position>
             <sys_created_by>mike.cornell</sys_created_by>
-            <sys_created_on>2022-03-30 04:00:23</sys_created_on>
-            <sys_id>aae6462547aa4950d0ece731e36d434c</sys_id>
+            <sys_created_on>2022-04-04 04:44:27</sys_created_on>
+            <sys_id>89f0c49347660910d0ece731e36d4323</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
             <sys_ui_section caption="Activity" display_value="Activity" name="x_snc_electronic_0_mar_calendar" sys_domain="global" view="Default view">eee6062547aa4950d0ece731e36d439b</sys_ui_section>
             <sys_updated_by>mike.cornell</sys_updated_by>
-            <sys_updated_on>2022-03-30 04:00:23</sys_updated_on>
+            <sys_updated_on>2022-04-04 04:44:27</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>

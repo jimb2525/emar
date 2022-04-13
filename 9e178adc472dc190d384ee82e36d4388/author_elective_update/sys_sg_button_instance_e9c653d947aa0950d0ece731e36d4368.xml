@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="DELETE">
+        <active>true</active>
+        <button display_value="Launcher Button">2dc653d947aa0950d0ece731e36d4364</button>
+        <color_theme>primary</color_theme>
+        <description/>
+        <field_name/>
+        <icon display_value="User Icon">a1c653d947aa0950d0ece731e36d4361</icon>
+        <label>eMAR Calendar View Launcher Button Instance</label>
+        <location>top</location>
+        <name>eMAR Calendar View Launcher Button Instance</name>
+        <order/>
+        <parent>c791baf0472e4550d0ece731e36d43c1</parent>
+        <parent_table>sys_sg_applet_launcher</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-29 15:10:49</sys_created_on>
+        <sys_id>e9c653d947aa0950d0ece731e36d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>eMAR Calendar View Launcher Button Instance</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_update_name>sys_sg_button_instance_e9c653d947aa0950d0ece731e36d4368</sys_update_name>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-29 15:10:49</sys_updated_on>
+        <table/>
+    </sys_sg_button_instance>
+    <sys_translated_text action="DELETE" query="documentkey=e9c653d947aa0950d0ece731e36d4368"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</application>
+        <file_path/>
+        <instance_id>1a6bc3f2db050510ad8dd7c8f49619b6</instance_id>
+        <instance_name>elarademo</instance_name>
+        <name>sys_sg_button_instance_e9c653d947aa0950d0ece731e36d4368</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance"><sys_sg_button_instance action="INSERT_OR_UPDATE"><active>true</active><button display_value="Launcher Button">2dc653d947aa0950d0ece731e36d4364</button><color_theme>primary</color_theme><description/><field_name/><icon display_value="User Icon">a1c653d947aa0950d0ece731e36d4361</icon><label>eMAR Calendar View Launcher Button Instance</label><location>top</location><name>eMAR Calendar View Launcher Button Instance</name><order/><parent>c791baf0472e4550d0ece731e36d43c1</parent><parent_table>sys_sg_applet_launcher</parent_table><sys_class_name>sys_sg_button_instance</sys_class_name><sys_created_by>mike.cornell</sys_created_by><sys_created_on>2022-03-29 15:10:49</sys_created_on><sys_id>e9c653d947aa0950d0ece731e36d4368</sys_id><sys_mod_count>0</sys_mod_count><sys_name>eMAR Calendar View Launcher Button Instance</sys_name><sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package><sys_policy/><sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope><sys_update_name>sys_sg_button_instance_e9c653d947aa0950d0ece731e36d4368</sys_update_name><sys_updated_by>mike.cornell</sys_updated_by><sys_updated_on>2022-03-29 15:10:49</sys_updated_on><table/></sys_sg_button_instance><sys_translated_text action="delete_multiple" query="documentkey=e9c653d947aa0950d0ece731e36d4368"/></record_update>]]></payload>
+        <payload_hash>-175362251</payload_hash>
+        <record_name>eMAR Calendar View Launcher Button Instance</record_name>
+        <reverted_from/>
+        <source>bcd8e23447ea4550d0ece731e36d43ee</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-29 15:10:49</sys_created_on>
+        <sys_id>edc653d947aa0950d0ece731e36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fd63ac10a0000001</sys_recorded_at>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-29 15:10:49</sys_updated_on>
+        <type>Function instance</type>
+        <update_guid>e5c653d9abaa09508f17b70ebdf9d16b</update_guid>
+        <update_guid_history>e5c653d9abaa09508f17b70ebdf9d16b:-175362251</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>mike.cornell</sys_created_by>
+        <sys_created_on>2022-03-30 06:41:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_button_instance">sys_sg_button_instance</sys_db_object>
+        <sys_id>135692704fe34366b293b56ce5d39f91</sys_id>
+        <sys_metadata>e9c653d947aa0950d0ece731e36d4368</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>eMAR Calendar View Launcher Button Instance</sys_name>
+        <sys_package display_value="Electronic Medication Administration Record" source="x_snc_electronic_0">9e178adc472dc190d384ee82e36d4388</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Electronic Medication Administration Record">9e178adc472dc190d384ee82e36d4388</sys_scope>
+        <sys_scope_delete display_value="">7874500926b9488098abe4bd8091d224</sys_scope_delete>
+        <sys_update_name>sys_sg_button_instance_e9c653d947aa0950d0ece731e36d4368</sys_update_name>
+        <sys_update_version display_value="sys_sg_button_instance_e9c653d947aa0950d0ece731e36d4368">edc653d947aa0950d0ece731e36d436b</sys_update_version>
+        <sys_updated_by>mike.cornell</sys_updated_by>
+        <sys_updated_on>2022-03-30 06:41:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
